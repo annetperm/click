@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ClickableViewAccessibility">
+        <ignore path="src/com/messme/chats/messages/AbstractMessageFragment.java" />
+    </issue>
+    <issue id="DefaultLocale" severity="ignore">
+        <ignore path="src/com/messme/AdapterCountry.java" />
+        <ignore path="src/com/messme/Countrys.java" />
+        <ignore path="src/com/messme/chats/AdapterDialog.java" />
+        <ignore path="src/com/messme/chats/AdapterSelect.java" />
+        <ignore path="src/com/messme/cities/AdapterCities.java" />
+        <ignore path="src/com/messme/contacts/AdapterContacts.java" />
+        <ignore path="src/com/messme/contacts/Contact.java" />
+        <ignore path="src/com/messme/contacts/Friend.java" />
+        <ignore path="src/com/messme/countries/AdapterCountries.java" />
+        <ignore path="src/com/messme/countries/Countries.java" />
+        <ignore path="src/com/messme/data/Contact.java" />
+        <ignore path="src/com/messme/data/Friend.java" />
+        <ignore path="src/com/messme/data/User.java" />
+        <ignore path="src/com/messme/settings/FragmentProfile.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/messme/MessmeService.java" />
+        <ignore path="src/com/messme/socket/CommunicationSocket.java" />
+        <ignore path="src/com/messme/socket/MessmeService.java" />
+        <ignore path="src/com/messme/socket/ServerConnection.java" />
+    </issue>
+    <issue id="InflateParams">
+        <ignore path="src/com/messme/chats/chat/AdapterChat.java" />
+        <ignore path="src/com/messme/chats/chat/FragmentGroup.java" />
+        <ignore path="src/com/messme/chats/delivery/Delivery.java" />
+        <ignore path="src/com/messme/chats/delivery/FragmentDelivery.java" />
+        <ignore path="src/com/messme/chats/group/FragmentGroup.java" />
+        <ignore path="src/com/messme/chats/messages/AbstractMessageFragment.java" />
+        <ignore path="src/com/messme/chats/messages/chat/FragmentGroup.java" />
+        <ignore path="src/com/messme/chats/messages/delivery/FragmentDelivery.java" />
+        <ignore path="src/com/messme/contacts/FragmentContacts.java" />
+        <ignore path="src/com/messme/map/FragmentMap.java" />
+        <ignore path="src/com/messme/messages/chat/FragmentGroup.java" />
+        <ignore path="src/com/messme/messages/delivery/FragmentDelivery.java" />
+    </issue>
+    <issue id="SdCardPath">
+        <ignore path="src/com/messme/chats/messages/Attachment.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/messme/FragmentProfile.java" />
+        <ignore path="src/com/messme/chats/AdapterDialog.java" />
+        <ignore path="src/com/messme/chats/Dialog.java" />
+        <ignore path="src/com/messme/chats/DialogMessage.java" />
+        <ignore path="src/com/messme/profile/FragmentProfile.java" />
+        <ignore path="src/com/messme/settings/FragmentProfile.java" />
+        <ignore path="src/com/messme/util/DateUtil.java" />
+        <ignore path="src/com/messme/util/Util.java" />
+    </issue>
+    <issue id="ViewHolder">
+        <ignore path="src/com/messme/chats/messages/resend/AdapterResendChats.java" />
+        <ignore path="src/com/messme/chats/messages/resend/AdapterResendContacts.java" />
+        <ignore path="src/com/messme/messages/resend/AdapterResendChats.java" />
+        <ignore path="src/com/messme/messages/resend/AdapterResendContacts.java" />
+        <ignore path="src/com/messme/user/AdapterSharedGroups.java" />
+    </issue>
+</lint>
