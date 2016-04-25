@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundFilter"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivRestoreBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvRestoreTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/RestoreTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/RestoreText"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextBlack" />
+
+    <LinearLayout
+        android:id="@+id/llRestoreUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical" >
+
+        <com.messme.view.CircleImageView
+            android:id="@+id/ivRestoreAvatar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@color/Background" />
+
+        <TextView
+            android:id="@+id/tvRestoreName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="@string/Load"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/TextBlack" />
+		
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ivRestore1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_contact_black" />
+
+            <TextView
+                android:id="@+id/tvRestoreLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/Load"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/ivRestore2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_phone_black" />
+
+            <TextView
+                android:id="@+id/tvRestorePhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Load"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pbRestore"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvRestoreQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center_horizontal"
+        android:text="@string/RestoreQuestion"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextBlack" />
+
+    <Button
+        android:id="@+id/btnRestoreYES"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_btn_blue_shadow"
+        android:text="@string/RestoreYES"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_btn_white" />
+
+    <Button
+        android:id="@+id/btnRestoreNO"
+        android:layout_width="260dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="16dp"
+        android:background="@drawable/selector_btn_white_shadow_borders"
+        android:text="@string/RestoreNO"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_btn_blue_sub" />
+
+</LinearLayout>

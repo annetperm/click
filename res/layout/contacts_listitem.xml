@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_li"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/tvContactsListitemGroup"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/TextBlack" />
+
+    <TextView
+        android:id="@+id/tvContactsListitemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/Load"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/TextBlack" />
+
+    <Button
+        android:id="@+id/btnContactsListitemInvite"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="@string/ContactsListitemInvite"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/color_btn_blue" />
+
+</LinearLayout>

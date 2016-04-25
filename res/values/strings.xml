@@ -1,0 +1,460 @@
+<resources>
+    <string name="app_name">Click</string>
+    
+    <string name="space">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="attach_photo">&#58288;</string>
+    
+    <string name="SexFemale">Женский</string>
+    <string name="SexMale">Мужской</string>
+    <string name="SexAll">Любой</string>
+    <string name="SexNot">Не указан</string>
+    <string name="SexNot2">Не указывать</string>
+    
+    <string name="Age1">год</string>
+    <string name="Age2">года</string>
+    <string name="Age3">лет</string>
+    
+    <string name="AgeFrom">от</string>
+    <string name="AgeTo">до</string>
+    <string name="AgeNot">Не указан</string>
+    
+    <string name="StatusOnline">● В сети</string>
+    <string name="StatusOffline">● Нет в сети</string>
+    <string name="StatusOfflineTime1">● Был сегодня в %s</string>
+    <string name="StatusOfflineTime2">● Была сегодня в %s</string>
+    <string name="StatusOfflineTime3">● Был(а) сегодня в %s</string>
+    <string name="StatusOfflineTime4">● Был %1$s в %2$s</string>
+    <string name="StatusOfflineTime5">● Была %1$s в %2$s </string>
+    <string name="StatusOfflineTime6">● Был(а) %1$s в %2$s</string>
+    
+    <string name="DistanceNear">Рядом</string>
+    
+    <string name="DateNot">Не указана</string>
+    
+    <string name="You">Вы</string>
+    
+    <string name="Error">Ошибка</string>
+    <string name="Stop">Остановлено</string>
+    <string name="Load">Загружается</string>
+    
+	<string name="SelectCountry">Указать страну</string>	
+	<string name="SelectCity">Указать город</string>	
+    
+	<string name="Russia">Россия</string>	 
+    
+	<string name="Delivery">Рассылка</string>	 
+    
+    <string name="Notification1">У Вас %d новое сообщение</string>
+    <string name="Notification234">У Вас %d новых сообщения</string>
+    <string name="Notification567890">У Вас %d новых сообщений</string>
+    
+    <string name="Time0">Менее минуты</string>
+    <string name="Time1">мин.</string>
+    <string name="Time2">Менее получаса</string>
+    <string name="Time3">Менее часа</string>
+    <string name="Time4">Менее 2 часов</string>
+    <string name="Time5">Менее дня</string>
+	
+	<string name="Next">ПРОДОЛЖИТЬ</string>	
+    <string name="OkNext">ПРИНЯТЬ И ПРОДОЛЖИТЬ</string>
+    <string name="Cancel">ЗАКРЫТЬ</string>
+    <string name="Change">ИЗМЕНИТЬ</string>
+    <string name="OK">OK</string>
+    <string name="Yes">Да</string>
+    <string name="No">Нет</string>
+    
+    <string name="Dialog0Title">Не реализовано</string>
+    <string name="Dialog0Description">Не реализовано</string>
+    <string name="Dialog1Title">Ошибка сети</string>
+    <string name="Dialog1Description">Не удалось получить данные пользователя</string>
+    <string name="Dialog2Title">Ошибка сети</string>
+    <string name="Dialog2Description">Не удалось получить данные рассылки</string>
+    <string name="Dialog3Title">Ошибка сети</string>
+    <string name="Dialog3Description">Не удалось получить данные пользователей</string>
+    <string name="Dialog4Title">Ошибка</string>
+    <string name="Dialog4Description">Нельзя просматривать свойства рассылки, если Вы не её автор</string>
+    <string name="Dialog5Title">Ошибка данных</string>
+    <string name="Dialog5Description">Получены не корректные данные рассылки</string>
+    <string name="Dialog6Title">Ошибка данных</string>
+    <string name="Dialog6Description">Получены не корректные данные пользователя</string>
+    <string name="Dialog7Title">Ошибка данных</string>
+    <string name="Dialog7Description">Получены не корректные данные пользователей</string>
+    <string name="Dialog8Title">Ошибка</string>
+    <string name="Dialog8Description">Укажите тему</string>
+    <string name="Dialog9Title">Ошибка</string>
+    <string name="Dialog9Description">Укажите хотя бы двух пользователей</string>
+    <string name="Dialog10Title">Ошибка сети</string>
+    <string name="Dialog10Description">Не удалось отправить данные об создании группы на сервер</string>
+    <string name="Dialog11Title">Ошибка сети</string>
+    <string name="Dialog11Description">Не удалось отправить данные об обновлении группы на сервер</string>
+    <string name="Dialog12Title">Ошибка данных</string>
+    <string name="Dialog12Description">Не удалось создать группу</string>
+    <string name="Dialog13Title">Ошибка данных</string>
+    <string name="Dialog13Description">Не удалось обновить группу</string>
+    <string name="Dialog14Title">Ошибка сети</string>
+    <string name="Dialog14Description">Не удалось отправить данные об создании или обновлении рассылки на сервер</string>
+    <string name="Dialog15Title">Ошибка данных</string>
+    <string name="Dialog15Description">Не удалось создать или обновить рассылку</string>
+    <string name="Dialog16Title">Ошибка</string>
+    <string name="Dialog16Description">Необходимо выбрать город</string>
+    <string name="Dialog17Title">Ошибка сети</string>
+    <string name="Dialog17Description">Не удалось получить список городов</string>
+    <string name="Dialog18Title">Ошибка</string>
+    <string name="Dialog18Description">Необходимо указать логин</string>
+    <string name="Dialog19Title">Ошибка</string>
+    <string name="Dialog19Description">Дождитесь загрузки данных о пользователе</string>
+    <string name="Dialog20Title">Ошибка данных</string>
+    <string name="Dialog20Description">Получены не корректные данные при проверки пользователя</string>
+    <string name="Dialog21Title">Ошибка данных</string>
+    <string name="Dialog21Description">Получены не корректные данные при проверки кода</string>
+    <string name="Dialog22Title">Ошибка сети</string>
+    <string name="Dialog22Description">Не получилось очистить список друзей</string>
+    <string name="Dialog23Title">Ошибка сети</string>
+    <string name="Dialog23Description">Не получилось обновить данные профиля</string>
+    <string name="Dialog24Title">Ошибка сети</string>
+    <string name="Dialog24Description">Не получилось создать профиль пользователя</string>
+    <string name="Dialog25Title">Ошибка данных</string>
+    <string name="Dialog25Description">Не получилось обновить данные профиля</string>
+    <string name="Dialog26Title">Ошибка данных</string>
+    <string name="Dialog26Description">Не получилось создать профиль пользователя</string>
+    <string name="Dialog27Title">Ошибка данных</string>
+    <string name="Dialog27Description">Не получилось очистить список друзей</string>
+    <string name="Dialog28Title">Ошибка</string>
+    <string name="Dialog28Description">Пользователь не прошел проверку</string>
+    <string name="Dialog29Title">Ошибка</string>
+    <string name="Dialog29Description">Пользователь не найден</string>
+    <string name="Dialog30Title">Ошибка</string>
+    <string name="Dialog30Description">Пользователь заблокирован</string>
+    <string name="Dialog31Title">Ошибка</string>
+    <string name="Dialog31Description">Пользователь зашел с другого устройства</string>
+    <string name="Dialog32Title">Ошибка</string>
+    <string name="Dialog32Description">Пользователь не активирован</string>
+    <string name="Dialog33Title">Ошибка сети</string>
+    <string name="Dialog33Description">Не удалось получить данные группы</string>
+    <string name="Dialog34Title">Ошибка данных</string>
+    <string name="Dialog34Description">Получены не корректные данные группы</string>
+    <string name="Dialog35Title">Ошибка</string>
+    <string name="Dialog35Description">Не удалось записать голосовое сообщение</string>
+    <string name="Dialog36Title">Ошибка</string>
+    <string name="Dialog36Description">Не удалось сформировать сообщение</string>
+    <string name="Dialog37Title">Ошибка</string>
+    <string name="Dialog37Description">Не удалось записать видео файл</string>
+    <string name="Dialog38Title">Ошибка</string>
+    <string name="Dialog38Description">Не удалось получить фотографию</string>
+    <string name="Dialog39Title">Ошибка</string>
+    <string name="Dialog39Description">Нельзя переслать сообщение, в котором есть не загруженные данные</string>
+    <string name="Dialog40Title">Ошибка</string>
+    <string name="Dialog40Description">Нельзя удалить сообщение, которое уже получил пользователь</string>
+    <string name="Dialog41Title">Ошибка сети</string>
+    <string name="Dialog41Description">Не удалось послать команду на сервер для удаления сообщения</string>
+    <string name="Dialog42Title">Ошибка сети</string>
+    <string name="Dialog42Description">Не удалось послать команду на сервер для удаления истории сообшений</string>
+    <string name="Dialog43Title">Ошибка</string>
+    <string name="Dialog43Description">Нельзя удалять чужие сообщения</string>
+    <string name="Dialog44Title">Ошибка</string>
+    <string name="Dialog44Description">Нельзя удалить сообщение, которое уже отправили на сервер</string>
+    <string name="Dialog45Title">Ошибка</string>
+    <string name="Dialog45Description">Не удалось получить геоданные</string>
+    <string name="Dialog46Title">Ошибка</string>
+    <string name="Dialog46Description">Нельзя переслать временное сообщение</string>
+    <string name="Dialog47Title">Ошибка</string>
+    <string name="Dialog47Description">С этим пользователем нет диалогов</string>
+    <string name="Dialog48Title">Выполнено</string>
+    <string name="Dialog48Description">Диалог успешно очистен</string>
+    <string name="Dialog49Title">Ошибка</string>
+    <string name="Dialog49Description">Не удалось открыть файл</string>
+    <string name="Dialog50Title">Ошибка</string>
+    <string name="Dialog50Description">Вы не являетесь членом группы</string>
+    <string name="Dialog51Title">Удалить друга</string>
+    <string name="Dialog51Description">Вы действительно хотите удалить пользователя из списка друзей?</string>
+    <string name="Dialog52Title">Не верные данные</string>
+    <string name="Dialog52Description">Вам должны быть страше 14 лет</string>
+    
+    
+    <string name="AvatarCamera">Камера</string>
+    <string name="AvatarGallery">Галерея</string>
+    <string name="AvatarDelete">Удалить</string>
+    
+    <string name="MenuChats">Чаты</string>
+    <string name="MenuContacts">Контакты</string>
+    <string name="MenuList">Список</string>
+    <string name="MenuMap">Карта</string>
+    <string name="MenuFeed">Эфир</string>
+    <string name="MenuSettings">Настройки</string>	
+    
+    <string name="ContactTitle">Просмотр контакта</string>
+    <string name="ContactAdd">ДОБАВИТЬ В КОНТАКТЫ</string>
+    <string name="ContactError">ФАЙЛ НЕ НАЙДЕН</string>
+    
+    <string name="PlaceTitle">Местоположение</string>	
+    <string name="PlaceSend">Отправить местоположение</string>	
+    
+    <string name="ChatsTitle">Чаты</string>
+	<string name="ChatsSearch">Поиск</string>
+	<string name="ChatsNewDialog">Диалог</string>
+	<string name="ChatsNewChat">Группу</string>
+	<string name="ChatsNewDelivery">Рассылку</string>
+	<string name="ChatsCancel">Отмена</string>
+    <string name="ChatsChats">Общий раздел</string>
+	<string name="ChatsText">У Вас нет диалогов, групп и рассылок</string>
+	<string name="ChatsText2">Создайте диалог, группу или рассылку для участников из Вашего списка Контактов</string>
+    <string name="ChatsArchive">Архив</string>
+	<string name="ChatsArchiveText">Ваш архив пуст</string>
+	<string name="ChatsArchiveText2">Переместите сюда чаты, которые давно не используются, если в них появятся новые сообщения, они автоматически переместятся в общий раздел</string>
+    <string name="ChatsSecret">Секретный раздел</string>
+    <string name="ChatsSecretEmpty">Для дальнейшего доступа в секретный раздел Вам необходимо установить четырехзначный код доступа. Код доступа невозможно восстановить. При смене кода доступа все чаты из секретного раздела удаляются.</string>
+	<string name="ChatsSecretText">Ваш секретный раздел пуст</string>
+	<string name="ChatsSecretText2">Переместите сюда чаты, которые вы не хотите отображать в общем разделе</string>
+    <string name="ChatsInfo">Подробная информация</string>
+    <string name="ChatsMoveChats">Переместить в общий раздел</string>
+    <string name="ChatsMoveArchive">Переместить в архив</string>
+    <string name="ChatsMoveSecret">Переместить в секретный раздел</string>
+    <string name="ChatsNotReaded">Отметить как не прочитанное</string>
+    <string name="ChatsCancelNotReaded">Убрать метку о непрочтение</string>
+    <string name="ChatsDelete">Удалить</string>
+    <string name="ChatsSecretCode">Введите ПИН</string>
+    
+	<string name="MessagesSearch">Поиск</string>
+	<string name="MessagesAttachPhoto">Фото</string>
+	<string name="MessagesAttachVideo">Видео</string>
+	<string name="MessagesAttachFile">Файл</string>
+	<string name="MessagesAttachAudio">Аудио</string>
+	<string name="MessagesAttachVoice">Голос</string>
+	<string name="MessagesAttachPlace">Место</string>
+	<string name="MessagesAttachContact">Контакт</string>
+	<string name="MessagesAttachHide">Свернуть</string>
+	<string name="MessagesAttachFiles">Несколько файлов</string>
+	<string name="MessagesVoice">ГОЛОСОВОЕ СООБЩЕНИЕ</string>
+    <string name="MessagesPhotoChoose">Выберите</string>
+    <string name="MessagesRecordCancel">Отпустите для отмены</string>
+    <string name="MessagesDelete">Удалить сообщение</string>
+    <string name="MessagesResend">Переслать сообщение</string>
+    <string name="MessagesCopy">Копировать текст сообщения</string>
+    <string name="MessagesCodeEmpty">Для перемещения чата в секретный раздел Вам необходимо установить четырехзначный код доступа. Код доступа невозможно восстановить. При смене кода доступа все чаты из секретного раздела удаляются.</string>
+    
+    <string name="DeliveryTitle">Рассылка</string>
+    <string name="DeliveryTheme">Название рассылки</string>
+    <string name="DeliveryDate">Дата создания</string>
+    <string name="DeliveryMembers">Участники</string>
+    <string name="DeliveryAddMember">Выберите участников рассылки</string>
+    <string name="DeliveryChangeHeader">Изменить рассылку</string>
+    <string name="DeliveryChangeText">Рассылка была изменена, сохранить изменения?</string>
+    
+	<string name="ChatSearch">Поиск</string>
+	<string name="ChatVoice">ГОЛОСОВОЕ СООБЩЕНИЕ</string>
+    <string name="ChatRecordCancel">Отпустите для отмены</string>
+    
+    <string name="GroupTheme">Тема группы</string>
+    <string name="GroupDescription">Описание группы</string>
+    <string name="GroupDate">Дата создания</string>
+    <string name="GroupMembers">Участники</string>
+    <string name="GroupAddMember">Выберите участников группы</string>
+    <string name="GroupChangeHeader">Изменить группу</string>
+    <string name="GroupChangeText">Группа была изменена, сохранить изменения?</string>
+    
+    <string name="ContactsTitle">Контакты</string>
+    <string name="ContactsListitemInvite">Пригласить</string>
+	<string name="ContactsSearch">Введите имя</string>
+    <string name="ContactsGlobalSearch">Глобальный поиск</string>
+    <string name="ContactsDialogMessages">Перейти к диалогу</string>
+    <string name="ContactsDialogInfo">Перейти к профилю</string>
+    <string name="ContactsDialogDelete">Удалить из друзей</string>
+    
+    <string name="MapTitle">Карта</string>
+    <string name="MapShowMeOnMap">Показывать меня на карте</string>
+    <string name="MapAge">Возраст</string>
+    <string name="MapSex">Пол</string>
+    <string name="MapDialodAge">Укажите область </string>
+    <string name="MapAllUser">Все участники</string>
+    <string name="MapFriends">Мои контакты</string>
+    <string name="MapAllCountry">Все страны</string>
+    
+    <string name="ListTitle">Список</string>
+    <string name="ListShowMeOnList">Показывать меня на карте</string>
+    <string name="ListAge">Возраст</string>
+    <string name="ListSex">Пол</string>
+    <string name="ListAllUser">Все участники</string>
+    <string name="ListFriends">Мои контакты</string>
+    <string name="ListAllCountry">Все страны</string>
+    <string name="ListSearch">Найти</string>
+    <string name="ListListitemToMap">На карте</string>
+    <string name="ListListitemHidden">Скрыт</string>
+    
+    <string name="UserPhoto">Фото</string>
+    <string name="UserAllPhoto">ВСЕ ФОТО</string>
+    <string name="UserPhoneText">Телефонный номер</string>
+    <string name="UserSexText">Пол</string>
+    <string name="UserAgeText">Возраст</string>
+    <string name="UserPlaceText">Расположение</string>
+    <string name="UserToMap">НА КАРТЕ</string>
+    <string name="UserLockUnLock">Не беспокоить</string>
+    <string name="UserMedia">Медиафайлы</string>
+    <string name="UserNotification">Уведомления</string>
+    <string name="UserSettings">Настройки</string>
+    <string name="UserSharedGroups">Общие группы</string>
+    <string name="UserMessages">Сообщения в Эфире</string>
+    <string name="UserClear">ОЧИСТИТЬ ДИАЛОГИ</string>
+    <string name="UserDelete">УДАЛИТЬ ИЗ ДРУЗЕЙ</string>
+    <string name="UserNoPlace">Данные не указанны</string>
+    <string name="UserStatusNoData">Нет данных</string>
+	
+    
+	<string name="CountriesTitle">Выбор страны</string>
+	<string name="CountriesSearch">Введите название страны</string>
+	
+	<string name="SharedGroupsTitle">Общие группы</string>
+	
+    
+	<string name="CitiesTitle">Выбор города</string>
+	<string name="CitiesSearch">Введите название города</string>
+    
+    
+	<string name="StartWelcome">Добро пожаловать в Click</string>    
+	<string name="StartDescription">Кросс-платформенная мобильная система обмена сообщениями с друзьями по всему миру</string>
+	<string name="StartConditions">УСЛОВИЯ ПРЕДОСТАВЛЕНИЯ УСЛУГ</string>
+    
+    <string name="OfferTitle">Условия окозания услуг</string>
+    
+    <string name="PromoInfoTitle">Промо код</string>
+    
+	<string name="LoginTitle">Настройка MessMe</string>    
+	<string name="LoginPhone">Подтвердите код страны и ваш номер телефона</string>
+	<string name="LoginCode">Код доступа будет выслан вам в SMS сообщении</string>
+	<string name="LoginPromo">Введите промо-код</string>
+	<string name="LoginYourPhone">Ваш номер телефона</string>
+	<string name="LoginDialogTitle">Проверка номера</string>
+	<string name="LoginDialogAnswer">Это Ваш правильный номер?</string>
+	<string name="LoginDialogSMS">SMS с вашим кодом доступа будет отправлено на этот номер</string>
+    
+    <string name="SMSTitle">Подтверждение номера</string>
+    <string name="SMSText">Введите код доступа из SMS сообщения</string>
+    <string name="SMSHint">Введите код доступа</string>
+    <string name="SMSError">Вы ввели неверный код доступа</string>
+    <string name="SMSCode1">Код доступа выслан вам в SMS.</string>
+    <string name="SMSCode2">Введите полученный код</string>
+    <string name="SMSRepeat">ВЫСЛАТЬ КОД ДОСТУПА ПОВТОРНО</string>
+    <string name="SMSMessageRepeatHeader">Не получилось отправит сообщение</string>
+    <string name="SMSMessageRepeatText">Повторите попытку</string>
+    <string name="SMSMessageContinueHeader">Не получилось зарегистрироватся</string>
+    <string name="SMSMessageContinueText">Повторите попытку</string>
+    
+    <string name="RestoreTitle">Восстановление</string>
+    <string name="RestoreText">Вы уже зарегистрированы</string>
+    <string name="RestoreQuestion">Восстановить историю переписки и чатов?</string>
+    <string name="RestoreYES">ВОССТАНОВИТЬ</string>
+    <string name="RestoreNO">НЕ ВОССТАНАВЛИВАТЬ</string>
+
+    <string name="WelcomeHeader">Добро пожаловать</string>
+    <string name="WelcomeText">Для завершения установки Вам необходимо заполнить профиль с личными данными</string>
+    
+    <string name="ProfileTitle">Профиль</string>
+    <string name="ProfileAddPhoto">+ДОБАВИТЬ ФОТО</string>
+    <string name="ProfileName">Имя</string>
+    <string name="ProfileSurname">Фамилия</string>
+    <string name="ProfileLogin">Логин*</string>
+    <string name="ProfileCheck">ПРОВЕРИТЬ</string>
+    <string name="ProfileSex">Пол</string>
+    <string name="ProfileBirthday">Дата рождения</string>
+    <string name="ProfilePlace">Расположение</string>
+    <string name="ProfileChoose">Выберите</string>
+    <string name="ProfileChooseBirthday">Выберите дату</string>
+    <string name="ProfileChangeHeader">Изменить профиль</string>
+    <string name="ProfileChangeText">Профиль был изменен, сохранить изменения?</string>
+    <string name="ProfileInfo">Персональная информация</string>
+    
+    <string name="SelectTitle">Контакты</string>
+	<string name="SelectSearch">Поиск</string>
+	<string name="SelectText0">Выберете собеседника для диалога</string>
+	<string name="SelectText1">Выберете участников группового чата</string>
+	<string name="SelectText2">Выберете участников рассылки</string>
+    
+	<string name="SettingsTitle">Настройки</string>
+	<string name="Settings1">Приватность и безопасность</string>
+	<string name="Settings2">Поддержка и информация</string>
+	<string name="Settings3">Карта</string>
+	<string name="Settings4">Мой профиль</string>
+	<string name="Settings5">Настройка приложения</string>
+	<string name="Settings6">Уведомления</string>
+	<string name="Settings7">Сообщения</string>
+	<string name="Settings8">Пригласить друзей</string>
+	<string name="Settings9">Выйти</string>
+	<string name="SettingsDialogHeader">Вы действительно хотите выйти?</string>
+	
+	<string name="SettingSecurityTitle">Настройка безопасности</string>
+	<string name="SettingSecurityBlack">Заблокированные пользователи</string>
+	<string name="SettingSecurityAdd">Добавить</string>
+	<string name="SettingSecurityList">Список</string>
+	<string name="SettingSecurityStatus">Кто может видеть мой статус</string>
+	<string name="SettingSecurityStatus1">Все</string>
+	<string name="SettingSecurityStatus2">Мои контакты</string>
+	<string name="SettingSecurityStatus3">Никто</string>
+	<string name="SettingSecurityPinReset">Сбросить ПИНкод</string>
+	<string name="SettingSecuritySecret">ПИНкод для секретных чатов</string>
+	<string name="SettingSecurityNoPin">ПИНкод не указан, значение по умолчанию: 0000</string>
+	<string name="SettingSecurityYesPin">Чтобы изменить ПИНкод, введите текущий для подтверждения</string>
+	<string name="SettingSecurityOld">Текущий ПИНкод</string>
+	<string name="SettingSecurityNew">Новый ПИНкод</string>
+	<string name="SettingSecuritySubmit">Подтвердите</string>
+    <string name="SettingSecurityMessageTitle">ПИНкод изменен</string>
+    <string name="SettingSecurityMessageDescription">ПИНкод был успешно изменен. Обратите внимание, что он сохраняется локально на устройстве и его НЕ МОЖЕТ знать служба технической поддержки. В случае если вы забыли ПИНкод, сбросить его возможно только переустановкой приложения</string>
+	
+	<string name="SettingInfoTitle">Поддержка и информация</string>
+	<string name="SettingInfoQuestion">Часто задаваемые вопросы</string>
+	<string name="SettingInfoFAQ">Задать вопрос</string>
+	<string name="SettingInfoBonus">Система бонусов</string>
+	<string name="SettingInfoUsing">Условия использования</string>
+	
+	<string name="SettingMapTitle">Настройка карты</string>
+	<string name="SettingMapStatus">Кто может видеть мое местоположение</string>
+	<string name="SettingMapStatus1">Все</string>
+	<string name="SettingMapStatus2">Мои контакты</string>
+	<string name="SettingMapStatus3">Никто</string>
+	
+	<string name="SettingApplicationTitle">Настройка приложения</string>
+	<string name="SettingApplicationDownloadMobile">Загружать вложения при мобильной сети</string>
+	<string name="SettingApplicationDownloadWifi">Загружать вложения при Wi-Fi подключении</string>
+	<string name="SettingApplicationDownloadRoaming">Загружать вложения при роуминге</string>
+	<string name="SettingApplicationDownloadPhoto">Фото</string>
+	<string name="SettingApplicationDownloadAudio">Аудио</string>
+	<string name="SettingApplicationDownloadVideo">Видео</string>
+	<string name="SettingApplicationDownloadFile">Файлы</string>
+	<string name="SettingApplicationTheme">Фон приложения</string>
+	<string name="SettingApplicationTheme1">Основной</string>
+	<string name="SettingApplicationTheme2">Другой</string>
+	<string name="SettingApplicationLanguage">Язык приложения</string>
+	<string name="SettingApplicationLanguageManual">Системный</string>
+	
+	<string name="SettingNotificationTitle">Настройка уведомлений</string>
+	<string name="SettingNotificationMain">Служба уведомлений</string>
+	<string name="SettingNotificationSound">Звук уведомления</string>
+	<string name="SettingNotificationVibration">Вибрация</string>
+	<string name="SettingNotificationLight">Цвет светодиода</string>
+	<string name="SettingNotificationLightSelect">Выберите цвет светодиода</string>
+	
+	<string name="SettingMessagesTitle">Настройка сообщений</string>
+	<string name="SettingMessagesEnter">Отправлять сообщения по Enter</string>
+	<string name="SettingMessagesSize">Размер шрифта: </string>
+	<string name="SettingMessagesTimer">Таймер исчезающих сообщений: </string>
+	
+	<string name="SettingFriendsTitle">Пригласить друзей</string>
+	<string name="SettingFriendsViber">Viber</string>
+	<string name="SettingFriendsWhatsApp">WhatsApp</string>
+	<string name="SettingFriendsTelegram">Telegram</string>
+	<string name="SettingFriendsVK">VK</string>
+	<string name="SettingFriendsFacebook">Facebook</string>
+	<string name="SettingFriendsEmail">E-Mail</string>
+	
+	<string name="ResendTitle">Переслать</string>
+	<string name="ResendContacts">Контакты</string>
+	<string name="ResendChats">Чаты</string>
+	<string name="ResendSecret">Секретный раздел</string>
+	<string name="ResendSecretText">Ваш секретный раздел пуст</string>
+	<string name="ResendSecretText2">Переместите сюда чаты, которые вы не хотите отображать в общем разделе</string>
+	
+	<string name="LikesTitle">Список лайков</string>
+	
+	<string name="MediaTitle">Медиафайлы</string>
+    <string name="MediaCount1">%d файл</string>
+    <string name="MediaCount234">%d файла</string>
+    <string name="MediaCount567890">%d файлов</string>
+</resources>

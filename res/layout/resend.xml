@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llResendTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivResendBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvResendTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/ResendTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+    
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/vpResend"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:background="@color/BackgroundListitem" >
+
+		<android.support.v4.view.PagerTabStrip
+		    android:id="@+id/ptsResend"
+		    android:layout_width="match_parent"
+		    android:layout_height="40dp"
+		    android:layout_gravity="top"
+            android:gravity="center_vertical"
+		    android:background="@color/BackgroundFilter" 
+            android:textColor="@color/TextBlack"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+		
+	</android.support.v4.view.ViewPager>
+</LinearLayout>

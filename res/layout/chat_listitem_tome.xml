@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="2dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="2dp" >
+
+    <TextView
+        android:id="@+id/tvMessagesListitemHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/Load"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/TextSub" />
+
+    <LinearLayout
+        android:id="@+id/llChatListitemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp" >
+
+        <com.messme.view.CircleImageView
+            android:id="@+id/ivChatListitemAvatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@color/Background" />
+
+        <TextView
+            android:id="@+id/tvChatListitemName"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="right|center_vertical"
+            android:maxLines="1"
+            android:text="@string/Load"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/TextSub" />
+
+    </LinearLayout>
+
+    <LinearLayout
+    	android:id="@+id/llMessagesListitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:id="@+id/rlMessagesListitem"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:layout_marginRight="50dp"
+	        android:background="@drawable/drawable_message_tome" >
+	
+	        <LinearLayout
+	            android:id="@+id/llMessagesListitemMessage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:minHeight="20dp"
+	            android:minWidth="120dp"
+	            android:orientation="vertical"
+	            android:paddingLeft="8dp"
+	            android:paddingRight="8dp" >
+	
+	            <TextView
+	                android:id="@+id/tvMessagesListitemMessage"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:paddingBottom="4dp"
+	                android:paddingTop="4dp"
+	                android:text="@string/Load"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textColor="@color/TextBlack" />
+
+	            <LinearLayout
+	                android:id="@+id/llMessagesListitemAttachments"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center_horizontal"
+	                android:orientation="vertical"
+	                android:paddingBottom="20dp"
+	                android:paddingTop="4dp" >
+
+	            </LinearLayout>
+	
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignBottom="@+id/llMessagesListitemMessage"
+	            android:layout_alignRight="@+id/llMessagesListitemMessage"
+	            android:paddingBottom="4dp"
+	            android:paddingLeft="8dp"
+	            android:paddingRight="8dp" >
+	
+	            <TextView
+	                android:id="@+id/tvMessagesListitemTime"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:gravity="center_vertical"
+	                android:text="10:34"
+	                android:textAppearance="?android:attr/textAppearanceSmall"
+	                android:textColor="@color/TextSub" />
+	
+	            <ImageView
+	                android:id="@+id/ivMessagesListitemPlace"
+	                android:layout_width="16dp"
+	                android:layout_height="match_parent"
+	                android:src="@drawable/ic_place_pressed" />
+	
+	            <ImageView
+	                android:id="@+id/ivMessagesListitemTranslate"
+	                android:layout_width="16dp"
+	                android:layout_height="match_parent"
+	                android:src="@drawable/ic_translate_pressed" />
+	            
+				<ImageView
+	                android:id="@+id/ivMessagesListitemStatus"
+	                android:layout_width="16dp"
+	                android:layout_height="match_parent"
+	                android:src="@drawable/ic_message_sending" />
+	
+	        </LinearLayout>
+	        
+	        <ProgressBar
+	            android:id="@+id/pbMessagesListitem"
+	            style="?android:attr/progressBarStyle"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:visibility="gone" />
+	
+	        <TextView
+	            android:id="@+id/tvMessagesListitemProgress"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:text="@string/Load"
+	            android:textAppearance="?android:attr/textAppearanceSmall"
+	            android:textColor="@color/TextSub"
+	            android:visibility="gone" />
+	
+	    </RelativeLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>

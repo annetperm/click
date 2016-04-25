@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlAttachment"
+    android:layout_width="80dp"
+    android:layout_height="80dp" >
+
+    <ImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_attach_voice_preview" />
+
+    <ImageView
+        android:id="@+id/ivAttachmentRemove"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/selector_attachment_remove" />
+
+</RelativeLayout>

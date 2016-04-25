@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivOfferBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvOfferTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/OfferTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        style="@style/ScrollbarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1"
+        android:fastScrollEnabled="false"
+        android:paddingLeft="16dp"
+        android:paddingRight="11dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvOffer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Small T wf w fe f wf we fwfwfwfwfw fh fyj fh dgj dghebrgir guibergeiuorge rgrnoigberogn oergjergibeorgnoi ergpjeroghe porgoeirhgperojg0 ejpogjer9g 0ehg0je 09gjepjg0e9 hgerjhngehr guernpgui bheprgh poiehgoje iogheorjg p[ehrgh e[rhgeohr goehr[go uje[0rhg[eru gj[e[gu09ehr go[iehrg[oihe[goih e[rhge[0rh g[0ehrg[9ehrg0ue [iogjergi] 0jeg[rhe[0rgue ]r0gi=09erhjg]e9r0gheprgpeuirghep iurhgperbp ehg[heo rhpoegrhg ergergp8yerp ghpoiehrg poihepgoheopgih[ eo[hgeoihg[eh oeihg heo[ehr o[ighe g[oe h[eghe[ 8hgopeihgo[eig h[eoho[i he[oighpeiohge[hrge go[ee[9hge[oihgoepigyh8rghd[orhgo[irhg poeihoiehg poiehgpo ehbpoehg[ p9[erhg[oeihgo[eihg oe[igh e[oig heiogheroi[Small T wf w fe f wf we fwfwfwfwfw fh fyj fh dgj dghebrgir guibergeiuorge rgrnoigberogn oergjergibeorgnoi ergpjeroghe porgoeirhgperojg0 ejpogjer9g 0ehg0je 09gjepjg0e9 hgerjhngehr guernpgui bheprgh poiehgoje iogheorjg p[ehrgh e[rhgeohr goehr[go uje[0rhg[eru gj[e[gu09ehr go[iehrg[oihe[goih e[rhge[0rh g[0ehrg[9ehrg0ue [iogjergi] 0jeg[rhe[0rgue ]r0gi=09erhjg]e9r0gheprgpeuirghep iurhgperbp ehg[heo rhpoegrhg ergergp8yerp ghpoiehrg poihepgoheopgih[ eo[hgeoihg[eh oeihg heo[ehr o[ighe g[oe h[eghe[ 8hgopeihgo[eig h[eoho[i he[oighpeiohge[hrge go[ee[9hge[oihgoepigyh8rghd[orhgo[irhg poeihoiehg poiehgpo ehbpoehg[ p9[erhg[oeihgo[eihg oe[igh e[oig heiogheroi[Small T wf w fe f wf we fwfwfwfwfw fh fyj fh dgj dghebrgir guibergeiuorge rgrnoigberogn oergjergibeorgnoi ergpjeroghe porgoeirhgperojg0 ejpogjer9g 0ehg0je 09gjepjg0e9 hgerjhngehr guernpgui bheprgh poiehgoje iogheorjg p[ehrgh e[rhgeohr goehr[go uje[0rhg[eru gj[e[gu09ehr go[iehrg[oihe[goih e[rhge[0rh g[0ehrg[9ehrg0ue [iogjergi] 0jeg[rhe[0rgue ]r0gi=09erhjg]e9r0gheprgpeuirghep iurhgperbp ehg[heo rhpoegrhg ergergp8yerp ghpoiehrg poihepgoheopgih[ eo[hgeoihg[eh oeihg heo[ehr o[ighe g[oe h[eghe[ 8hgopeihgo[eig h[eoho[i he[oighpeiohge[hrge go[ee[9hge[oihgoepigyh8rghd[orhgo[irhg poeihoiehg poiehgpo ehbpoehg[ p9[erhg[oeihgo[eihg oe[igh e[oig heiogheroi[Small T wf w fe f wf we fwfwfwfwfw fh fyj fh dgj dghebrgir guibergeiuorge rgrnoigberogn oergjergibeorgnoi ergpjeroghe porgoeirhgperojg0 ejpogjer9g 0ehg0je 09gjepjg0e9 hgerjhngehr guernpgui bheprgh poiehgoje iogheorjg p[ehrgh e[rhgeohr goehr[go uje[0rhg[eru gj[e[gu09ehr go[iehrg[oihe[goih e[rhge[0rh g[0ehrg[9ehrg0ue [iogjergi] 0jeg[rhe[0rgue ]r0gi=09erhjg]e9r0gheprgpeuirghep iurhgperbp ehg[heo rhpoegrhg ergergp8yerp ghpoiehrg poihepgoheopgih[ eo[hgeoihg[eh oeihg heo[ehr o[ighe g[oe h[eghe[ 8hgopeihgo[eig h[eoho[i he[oighpeiohge[hrge go[ee[9hge[oihgoepigyh8rghd[orhgo[irhg poeihoiehg poiehgpo ehbpoehg[ p9[erhg[oeihgo[eihg oe[igh e[oig heiogheroi[]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]]ext"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/TextSub" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnOfferCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@drawable/selector_btn_cancel"
+            android:text="@string/Cancel"
+            android:textColor="@color/color_btn_blue" />
+
+        <Button
+            android:id="@+id/btnOfferOk"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:background="@drawable/selector_btn_blue_shadow"
+            android:text="@string/OkNext"
+            android:textColor="@color/color_btn_white" />
+
+    </LinearLayout>
+
+</LinearLayout>

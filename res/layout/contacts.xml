@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/lvContacts"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/llContactsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundFilterTransparent" >
+
+        <ImageView
+            android:id="@+id/ivContactsMenu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_menu" />
+
+        <TextView
+            android:id="@+id/tvContactsTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/ContactsTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivContactsSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactsSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llContactsTitle"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/search_drawable"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/ivContactsSearchBack"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/selector_back" />
+
+        <EditText
+            android:id="@+id/etContactsSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="@string/ContactsSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/TextSub" />
+
+        <ImageView
+            android:id="@+id/ivContactsClose"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/selector_cancel" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactsShadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_alignBottom="@id/llContactsTitle"
+        android:background="@drawable/drawable_shadow"
+        android:orientation="vertical" >
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivContactsAdd"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/selector_main"
+        android:paddingBottom="14dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_main_add" />
+	
+    <RelativeLayout
+        android:id="@+id/rlContactsDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llContactsDialogMessages"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivContactsDialogMessages"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_dialog" />
+
+                <TextView
+                    android:id="@+id/tvContactsDialogMessages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/ContactsDialogMessages"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContactsDialogInfo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivContactsDialogInfo"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_info" />
+
+                <TextView
+                    android:id="@+id/tvContactsDialogInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/ContactsDialogInfo"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContactsDialogDelete"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivContactsDialogDelete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_delete" />
+
+                <TextView
+                    android:id="@+id/tvContactsDialogDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/ContactsDialogDelete"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

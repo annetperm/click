@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/BackgroundFilter" >
+
+            <ImageView
+                android:id="@+id/ivSettingsMenu"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_menu" />
+
+            <TextView
+                android:id="@+id/tvSettingsTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/SettingsTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BackgroundListitem" >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llSettings1"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings1"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_security" />
+
+                        <TextView
+                            android:id="@+id/tvSettings1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings1"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext1"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings2"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings2"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_info" />
+
+                        <TextView
+                            android:id="@+id/tvSettings2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings2"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext2"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings3"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings3"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_place" />
+
+                        <TextView
+                            android:id="@+id/tvSettings3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings3"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext3"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings4"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings4"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_contact" />
+
+                        <TextView
+                            android:id="@+id/tvSettings4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings4"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext4"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings5"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings5"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_setting" />
+
+                        <TextView
+                            android:id="@+id/tvSettings5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings5"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext5"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings6"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings6"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_notification" />
+
+                        <TextView
+                            android:id="@+id/tvSettings6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings6"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext6"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings7"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings7"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_dialog" />
+
+                        <TextView
+                            android:id="@+id/tvSettings7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings7"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext7"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings8"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings8"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_add_friend" />
+
+                        <TextView
+                            android:id="@+id/tvSettings8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings8"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext8"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettings9"
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:background="@drawable/selector_li"
+                        android:clickable="true"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivSettings9"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_vertical"
+                            android:padding="4dp"
+                            android:src="@drawable/selector_exit" />
+
+                        <TextView
+                            android:id="@+id/tvSettings9"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:text="@string/Settings9"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_black" />
+
+                        <ImageView
+                            android:id="@+id/ivSettingsNext9"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:padding="8dp"
+                            android:src="@drawable/selector_next" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/llSettingsShadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/drawable_shadow"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlSettingsProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

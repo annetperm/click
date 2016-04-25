@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="TextBlack">#212121</color>
+    <color name="TextLightSub">#999999</color>
+    <color name="TextSub">#777777</color>
+    <color name="TextWhite">#ffffff</color>
+    <color name="TextBlue">#1996e4</color>
+    <color name="TextRed">#fc3f35</color>
+    
+    <color name="Background">#f6f6f6</color>
+    <color name="BackgroundStatusMessage">#30808080</color>
+    <color name="BackgroundPressed">#88d4fa</color>
+    <color name="BackgroundDialog">#75000000</color>
+    <color name="BackgroundFilterTransparent">#a0ffffff</color>
+    <color name="BackgroundFilter">#ffffff</color>
+    <color name="BackgroundFilterPressed">#88d4fa</color>
+    <color name="BackgroundListitem">#f8f8f8</color>
+    <color name="BackgroundListitemPressed">#88d4fa</color>
+    <color name="BackgroundListitemPressedTransparent">#9088d4fa</color>
+    <color name="BackgroundWhite">#ffffff</color>
+    <color name="BackgroundWhiteDisabled">#cdcdcd</color>
+    <color name="BackgroundWhiteShadow">#55000000</color>
+    <color name="BackgroundWhitePressed">#008be0</color>
+    <color name="BackgroundBlue">#008be0</color>
+    <color name="BackgroundBlueShadow">#008be0</color>
+    <color name="BackgroundBlueDisabled">#cdcdcd</color>
+    <color name="BackgroundBluePressed">#88d4fa</color>
+    <color name="BackgroundRed">#fc3f35</color>
+    <color name="BackgroundRedPressed">#88d4fa</color>
+    
+    <color name="Separator">#cdcdcd</color>
+    <color name="SeparatorListitem">#efefef</color> 
+    
+    <color name="TransparentDark">#50000000</color>
+    
+	<color name="ksw_md_ripple_normal">#1E000000</color>
+	<color name="ksw_md_ripple_checked">#33019285</color>
+	<color name="ksw_md_solid_shadow">#33000000</color>
+	<color name="ksw_md_solid_normal">#ECECEC</color>
+	<color name="ksw_md_solid_checked">#019285</color>
+	<color name="ksw_md_solid_disable">#FFFFFF</color>
+	<color name="ksw_md_solid_checked_disable">#aaaaaa</color>
+</resources>

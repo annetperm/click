@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_li"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp" >
+
+        <com.messme.view.CircleImageView
+            android:id="@+id/ivContactsListitemFriendAvatar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:src="@color/Background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvContactsListitemFriendName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="bottom"
+                android:maxLines="1"
+                android:paddingRight="16dp"
+                android:text="@string/Load"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/TextBlack" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvContactsListitemFriendLogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/Load"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/TextBlack" />
+
+                <TextView
+                    android:id="@+id/tvContactsListitemFriendMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/Load"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/TextSub" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llContactsListitemFriendNext"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/BackgroundListitem" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="72dp"
+            android:background="@color/SeparatorListitem"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

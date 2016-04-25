@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingSecurityBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingSecurityTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingSecurityTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/llSettingSecurityShadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/drawable_shadow"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svSettingSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvSettingSecuritySecret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SettingSecuritySecret"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                    	android:textColor="@color/TextBlack"  />
+
+                    <LinearLayout
+                        android:id="@+id/llSettingSecurityPinEmpty"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+                        
+						<TextView
+						    android:id="@+id/tvSettingSecurityPinEmpty"
+						    android:layout_width="match_parent"
+						    android:layout_height="wrap_content"
+						    android:layout_gravity="center"
+						    android:gravity="center_horizontal"
+						    android:padding="16dp"
+						    android:text="@string/ChatsSecretEmpty"
+						    android:textAppearance="?android:attr/textAppearanceSmall"
+						    android:textColor="@color/TextBlack" />
+						
+						<LinearLayout
+				            android:layout_width="wrap_content"
+				            android:layout_height="40dp"
+				            android:layout_gravity="center_horizontal"
+				            android:background="@drawable/drawable_et" >
+			            
+				            <EditText
+				                android:id="@+id/etSettingSecurityPinEmpty"
+				                android:layout_width="120dp"
+				                android:layout_height="40dp"
+				                android:layout_gravity="center_horizontal"
+				                android:layout_marginLeft="40dp"
+				                android:background="@android:color/transparent"
+				                android:ems="10"
+				                android:gravity="center"
+				                android:inputType="numberPassword"
+				                android:maxLength="4" />
+			
+				            <ImageView
+				                android:id="@+id/ivSettingSecurityPinEmpty"
+				                android:layout_width="40dp"
+				                android:layout_height="40dp"
+				                android:layout_gravity="center_vertical"
+				                android:padding="8dp"
+				                android:src="@drawable/ic_eye_open" />
+				        
+				        </LinearLayout>
+                        
+                        <Button
+				            android:id="@+id/btnSettingSecurityPinEmpty"
+				            android:layout_width="wrap_content"
+				            android:layout_height="48dp"
+				            android:layout_gravity="center_horizontal"
+				            android:layout_marginTop="16dp"
+				            android:background="@drawable/selector_btn_blue_shadow"
+				            android:paddingLeft="24dp"
+				            android:paddingRight="24dp"
+				            android:text="@string/OK"
+				            android:textAppearance="?android:attr/textAppearanceMedium"
+				            android:textColor="@color/color_btn_white" />
+                        
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSettingSecurityPinChange"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/btnSettingSecurityPinReset"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="16dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/selector_btn_blue_shadow"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp"
+                            android:text="@string/SettingSecurityPinReset"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/color_btn_white" />
+
+                        <TextView
+                            android:id="@+id/tvSettingSecurityPinText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:text="@string/SettingSecurityYesPin"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/TextBlack" />
+
+                        <EditText
+                            android:id="@+id/etSettingSecurityOld"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/drawable_et"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/SettingSecurityOld"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/TextBlack" />
+
+                        <EditText
+                            android:id="@+id/etSettingSecurityNew"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/drawable_et"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/SettingSecurityNew"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/TextBlack" />
+
+                        <EditText
+                            android:id="@+id/etSettingSecuritySubmit"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/drawable_et"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="@string/SettingSecuritySubmit"
+                            android:inputType="numberPassword"
+                            android:textColor="@color/TextBlack" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvSettingSecurityStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingSecurityStatus"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <RadioGroup
+                    android:id="@+id/rgSettingSecurityStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp" >
+
+                    <RadioButton
+                        android:id="@+id/rbSettingSecurityStatus1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:button="@drawable/selector_select"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingSecurityStatus1"
+                        android:textColor="@color/color_btn_black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSettingSecurityStatus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:button="@drawable/selector_select"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingSecurityStatus2"
+                        android:textColor="@color/color_btn_black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSettingSecurityStatus3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:button="@drawable/selector_select"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingSecurityStatus3"
+                        android:textColor="@color/color_btn_black" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/tvSettingSecurityList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingSecurityBlack"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp" >
+
+                    <Button
+                        android:id="@+id/btnSettingSecurityList"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_blue_shadow"
+                        android:text="@string/SettingSecurityList"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_btn_white" />
+
+                    <Button
+                        android:id="@+id/btnSettingSecurityAdd"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_blue_shadow"
+                        android:text="@string/SettingSecurityAdd"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_btn_white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

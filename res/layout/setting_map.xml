@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingMapBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingMapTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingMapTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/llSettingMapShadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/drawable_shadow"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svSettingApplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/tvSettingMapStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingMapStatus"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <RadioGroup
+                    android:id="@+id/rgSettingMapStatus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp" >
+
+                    <RadioButton
+                        android:id="@+id/rbSettingMapStatus1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:button="@drawable/selector_select"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingMapStatus1"
+                        android:textColor="@color/color_btn_black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSettingMapStatus2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:button="@drawable/selector_select"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingMapStatus2"
+                        android:textColor="@color/color_btn_black" />
+
+                    <RadioButton
+                        android:id="@+id/rbSettingMapStatus3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:button="@drawable/selector_select"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingMapStatus3"
+                        android:textColor="@color/color_btn_black" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

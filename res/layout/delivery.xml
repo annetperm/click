@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/BackgroundFilter" >
+
+            <ImageView
+                android:id="@+id/ivDeliveryBack"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_back" />
+
+            <TextView
+                android:id="@+id/tvDeliveryTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/DeliveryTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/llDeliveryShadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/drawable_shadow"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+		    <ImageView
+		        android:id="@+id/ivDeliverySend"
+		        android:layout_width="52dp"
+		        android:layout_height="52dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="12dp"
+		        android:background="@drawable/selector_main"
+		        android:paddingBottom="14dp"
+		        android:paddingTop="10dp"
+		        android:src="@drawable/ic_main_send" />
+
+            <ListView
+                android:id="@+id/lvDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" 
+	            android:descendantFocusability="afterDescendants"
+	            android:divider="@android:color/transparent"
+	            android:dividerHeight="0dp"
+	            android:scrollbars="none" 
+	            android:footerDividersEnabled="false"
+	            android:headerDividersEnabled="false" >
+	            
+            </ListView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlDeliveryProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlDeliveryChanges"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:padding="24dp" >
+	
+	            <TextView
+	                android:id="@+id/tvDeliveryChangesHeader"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="20dp"
+	                android:text="@string/DeliveryChangeHeader"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="@color/TextBlack" />
+	
+	            <TextView
+	                android:id="@+id/tvDeliveryChangesText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:text="@string/GroupChangeText"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/TextSub" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="52dp" >
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	
+	            <Button
+	                android:id="@+id/btnDeliveryChangesNo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Next"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	
+	            <Button
+	                android:id="@+id/btnDeliveryChangesYes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Change"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

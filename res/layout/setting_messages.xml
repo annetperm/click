@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.messme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingMessagesBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingMessagesTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingMessagesTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/llSettingMessagesShadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/drawable_shadow"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svSettingMessages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/llSettingMessagesEnter"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:padding="16dp" >
+
+                    <TextView
+                        android:id="@+id/tvSettingMessagesEnter"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/SettingMessagesEnter"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_btn_black" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/sbSettingMessagesEnter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:kswTintColor="@color/BackgroundBlue" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="96dp"
+                    android:orientation="vertical"
+                    android:padding="16dp" >
+
+                    <TextView
+                        android:id="@+id/tvSettingMessagesSize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="bottom"
+                        android:text="@string/SettingMessagesSize"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/TextBlack" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvSettingMessagesSizeMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="10"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/TextBlack" />
+
+                        <SeekBar
+                            android:id="@+id/sbSettingMessagesSize"
+                            style="@android:style/Widget.Holo.Light.SeekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="14"
+                            android:progress="4" />
+
+                        <TextView
+                            android:id="@+id/tvSettingMessagesSizeMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="24"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/TextBlack" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp" >
+
+                    <TextView
+                        android:id="@+id/tvSettingMessagesTimer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/SettingMessagesTimer"
+                        android:textAppearance="?android:attr/textAppearanceMedium" 
+                        android:textColor="@color/TextBlack" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/tvSettingMessagesTimerMin"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="5"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/TextBlack" />
+
+                        <SeekBar
+                            android:id="@+id/sbSettingMessagesTimer"
+                            style="@android:style/Widget.Holo.Light.SeekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:max="2"
+                            android:progress="1" />
+
+                        <TextView
+                            android:id="@+id/tvSettingMessagesTimerMax"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="15"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/TextBlack" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

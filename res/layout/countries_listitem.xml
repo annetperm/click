@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_li"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+
+    <com.messme.view.CircleImageView
+        android:id="@+id/ivCountriesListitemFlag"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_flag_null" />
+
+    <TextView
+        android:id="@+id/tvCountriesListitemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:text="@string/Load"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/TextBlack" />
+
+    <TextView
+        android:id="@+id/tvCountriesListitemCode"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:text="+7"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/TextSub" />
+
+    <ImageView
+        android:id="@+id/ivCountriesListitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_place" />
+
+</LinearLayout>

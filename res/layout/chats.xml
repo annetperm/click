@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    
+	    <LinearLayout
+	        android:id="@+id/llChatsTitle"
+	        android:layout_width="match_parent"
+	        android:layout_height="56dp"
+	        android:background="@color/BackgroundFilter" >
+	
+	        <ImageView
+	            android:id="@+id/ivChatsMenu"
+	            android:layout_width="56dp"
+	            android:layout_height="56dp"
+	            android:padding="16dp"
+	            android:src="@drawable/selector_menu" />
+	
+	        <TextView
+	            android:id="@+id/tvChatsTitle"
+	            android:layout_width="0dp"
+	            android:layout_height="match_parent"
+	            android:layout_gravity="center_vertical"
+	            android:layout_marginLeft="16dp"
+	            android:layout_weight="1"
+	            android:gravity="center_vertical"
+	            android:text="@string/ChatsTitle"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/TextBlack"
+	            android:textStyle="bold" />
+	
+	        <ImageView
+	            android:id="@+id/ivChatsSearch"
+	            android:layout_width="56dp"
+	            android:layout_height="56dp"
+	            android:padding="16dp"
+	            android:src="@drawable/selector_search" />
+	
+	    </LinearLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/llChatsSearch"
+	        android:layout_width="match_parent"
+	        android:layout_height="50dp"
+	        android:layout_marginBottom="3dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginTop="3dp"
+	        android:background="@drawable/search_drawable"
+	        android:visibility="gone" >
+		
+		    <ImageView
+		        android:id="@+id/ivChatsSearchBack"
+		        android:layout_width="20dp"
+		        android:layout_height="20dp"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="10dp"
+		        android:src="@drawable/selector_back" />
+		
+		    <EditText
+		        android:id="@+id/etChatsSearch"
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginLeft="20dp"
+		        android:layout_weight="1"
+		        android:background="@android:color/transparent"
+		        android:ems="10"
+		        android:hint="@string/ChatsSearch"
+		        android:inputType="text"
+		        android:maxLines="1"
+		        android:textAppearance="?android:attr/textAppearanceSmall"
+		        android:textColor="@color/TextSub" />
+		
+		    <ImageView
+		        android:id="@+id/ivChatsClose"
+		        android:layout_width="25dp"
+		        android:layout_height="25dp"
+		        android:layout_gravity="center_vertical"
+		        android:layout_marginRight="10dp"
+		        android:src="@drawable/selector_cancel" />
+	
+	    </LinearLayout>
+
+	    <RelativeLayout
+			android:id="@+id/rlChats"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" 
+        	android:background="@drawable/drawable_background_chats">
+    
+			<android.support.v4.view.ViewPager
+			    android:id="@+id/vpChats"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/transparent" >
+		
+				<android.support.v4.view.PagerTabStrip
+				    android:id="@+id/ptsChats"
+				    android:layout_width="match_parent"
+				    android:layout_height="40dp"
+				    android:layout_gravity="top"
+		            android:gravity="center_vertical"
+				    android:background="@color/BackgroundFilter" 
+		            android:textColor="@color/TextBlack"
+		            android:textAppearance="?android:attr/textAppearanceMedium"/>
+				
+			</android.support.v4.view.ViewPager>
+
+		    <ImageView
+		        android:id="@+id/ivChatsAdd"
+		        android:layout_width="52dp"
+		        android:layout_height="52dp"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_margin="12dp"
+		        android:background="@drawable/selector_main"
+		        android:paddingBottom="14dp"
+		        android:paddingTop="10dp"
+		        android:src="@drawable/ic_main_add" />
+			
+	    </RelativeLayout>
+
+	</LinearLayout>
+	
+    <RelativeLayout
+        android:id="@+id/rlChatsDialogNew"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llChatsDialogNewDialog"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivChatsDialogNewDialog"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_dialog" />
+
+                <TextView
+                    android:id="@+id/tvChatsDialogNewDialog"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/ChatsNewDialog"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llChatsDialogNewChat"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivChatsDialogNewChat"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_chats" />
+
+	            <TextView
+	                android:id="@+id/tvChatsDialogNewChat"
+	                android:layout_width="match_parent"
+	                android:layout_height="56dp"
+	                android:gravity="center_vertical"
+	                android:paddingLeft="8dp"
+	                android:text="@string/ChatsNewChat"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llChatsDialogNewDelivery"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivChatsDialogNewDelivery"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_delivery" />
+
+	            <TextView
+	                android:id="@+id/tvChatsDialogNewDelivery"
+	                android:layout_width="match_parent"
+	                android:layout_height="56dp"
+	                android:gravity="center_vertical"
+	                android:paddingLeft="8dp"
+	                android:text="@string/ChatsNewDelivery"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlChatsDialogHeader"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+            
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderInfo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsInfo"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderChats"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsMoveChats"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderArchive"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsMoveArchive"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderSecret"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsMoveSecret"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderNotreaded"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsNotReaded"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+
+            <TextView
+                android:id="@+id/tvChatsDialogHeaderRemove"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:text="@string/ChatsDelete"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/color_btn_black" />
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+</RelativeLayout>

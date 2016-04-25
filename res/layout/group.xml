@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rlGroup"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundRed" >
+
+        <ImageView
+            android:id="@+id/ivGroupAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@color/BackgroundBlue" />
+
+        <ImageView
+            android:id="@+id/ivGroupOpacity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@color/BackgroundBlue" />
+
+        <LinearLayout
+            android:id="@+id/llGroupTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ivGroupBack"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_back_white" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivGroupPhoto"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:padding="16dp"
+            android:src="@drawable/ic_edit_white" />
+    </RelativeLayout>
+
+    <com.github.ksoichiro.android.observablescrollview.ObservableListView
+        android:id="@+id/lvGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" />
+
+    <RelativeLayout
+        android:id="@+id/rlGroupDialogPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llGroupDialogPhotoCamera"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" 
+                android:background="@drawable/selector_background_filter" >
+
+                <ImageView
+                    android:id="@+id/ivGroupDialogPhotoCamera"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_photo" />
+
+                <TextView
+                    android:id="@+id/tvGroupDialogPhotoCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/AvatarCamera"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGroupDialogPhotoGallery"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" 
+                android:background="@drawable/selector_background_filter" >
+
+                <ImageView
+                    android:id="@+id/ivGroupDialogPhotoGallery"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_gallery" />
+
+                <TextView
+                    android:id="@+id/tvGroupDialogPhotoGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/AvatarGallery"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llGroupDialogPhotoDelete"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" 
+                android:background="@drawable/selector_background_filter" >
+
+                <ImageView
+                    android:id="@+id/ivGroupDialogPhotoDelete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_cancel" />
+
+                <TextView
+                    android:id="@+id/tvGroupDialogPhotoDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/AvatarDelete"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGroupProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+	
+    <RelativeLayout
+        android:id="@+id/rlGroupChanges"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:padding="24dp" >
+	
+	            <TextView
+	                android:id="@+id/tvGroupChangesHeader"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="20dp"
+	                android:text="@string/GroupChangeHeader"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="@color/TextBlack" />
+	
+	            <TextView
+	                android:id="@+id/tvGroupChangesText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:text="@string/GroupChangeText"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/TextSub" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="52dp" >
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	
+	            <Button
+	                android:id="@+id/btnGroupChangesNo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Next"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	
+	            <Button
+	                android:id="@+id/btnGroupChangesYes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Change"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <ImageView
+        android:id="@+id/ivGroupSend"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="12dp"
+        android:background="@drawable/selector_main"
+        android:paddingBottom="14dp"
+        android:paddingTop="10dp"
+        android:src="@drawable/ic_main_send" />
+
+</RelativeLayout>

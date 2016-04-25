@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="100dp"
+    android:background="@android:color/transparent"
+    android:minWidth="300dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/drawable_map_info_window" >
+
+        <ImageButton
+            android:id="@+id/ibtnMapInfoWindowAvatar"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_margin="5dp"
+            android:background="@color/BackgroundWhite" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/tvMapInfoWindowName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="bottom"
+                    android:maxLines="1"
+                    android:text="@string/Load"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <TextView
+                    android:id="@+id/tvMapInfoWindowLike"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|right"
+                    android:text="100"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextSub" />
+
+                <ImageButton
+                    android:id="@+id/ibtnMapInfoWindowLike"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_like" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvMapInfoWindowBottom"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="@string/Load"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextSub" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/TextSub" >
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/ibtnMapInfoWindowMessage"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_dialog_pressed" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMapInfoWindowAnchor"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/hint_arrow" />
+
+</LinearLayout>

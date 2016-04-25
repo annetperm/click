@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/llMessages"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/drawable_background_chats"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llMessagesTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llMessagesMenu"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/BackgroundFilter" >
+
+                <ImageView
+                    android:id="@+id/ivMessagesBack"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_back" />
+
+                <TextView
+                    android:id="@+id/tvMessagesTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/Load"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/ivMessagesLock"
+                    android:layout_width="40dp"
+                    android:layout_height="56dp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/ic_lock" />
+
+                <ImageView
+                    android:id="@+id/ivMessagesSearch"
+                    android:layout_width="40dp"
+                    android:layout_height="56dp"
+                    android:paddingBottom="16dp"
+                    android:paddingTop="16dp"
+                    android:src="@drawable/selector_search" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessagesSearch"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/search_drawable"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivMessagesSearch2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@android:drawable/ic_search_category_default" />
+
+                <EditText
+                    android:id="@+id/etMessagesSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/MessagesSearch"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/TextSub" />
+
+                <ImageView
+                    android:id="@+id/ivMessagesUp"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="12dp"
+                    android:src="@drawable/selector_up" />
+
+                <ImageView
+                    android:id="@+id/ivMessagesDown"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="12dp"
+                    android:src="@drawable/selector_down" />
+
+                <ImageView
+                    android:id="@+id/ivMessagesClose"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:padding="12dp"
+                    android:src="@drawable/selector_cancel" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:id="@+id/llMessagesShadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/drawable_shadow"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <com.github.ksoichiro.android.observablescrollview.ObservableRecyclerView
+                android:id="@+id/lvMessages"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <ProgressBar
+                android:id="@+id/pbMessages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llMessagesShadow"
+                android:layout_centerHorizontal="true" />
+
+            <LinearLayout
+                android:id="@+id/llMessagesLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvMessagesLock"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_horizontal"
+                    android:padding="16dp"
+                    android:text="@string/ChatsSecretCode"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/TextBlack" />
+
+                <EditText
+                    android:id="@+id/etMessagesLock"
+                    android:layout_width="200dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/drawable_et"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="numberPassword" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessagesSend"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivMessagesAttach"
+                    android:layout_width="32dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="4dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="8dp"
+                    android:src="@drawable/selector_filter" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="1"
+                    android:background="@drawable/drawable_message_my"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etMessages"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:background="@android:color/transparent"
+                        android:ems="10"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:maxHeight="100dp"
+                        android:minHeight="40dp"
+                        android:paddingBottom="4dp"
+                        android:paddingTop="4dp"
+                        android:scrollbarStyle="insideOverlay"
+                        android:scrollbars="vertical" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+			    <ImageView
+			        android:id="@+id/ivMessagesSend"
+			        android:layout_width="52dp"
+			        android:layout_height="52dp"
+			        android:layout_marginBottom="4dp"
+			        android:layout_marginLeft="12dp"
+			        android:layout_marginRight="12dp"
+			        android:layout_marginTop="12dp"
+			        android:background="@drawable/selector_main"
+			        android:paddingBottom="14dp"
+			        android:paddingTop="10dp"
+			        android:src="@drawable/ic_main_photo" />
+			    
+            </LinearLayout>
+
+            <HorizontalScrollView
+                android:id="@+id/hsvMessagesAttachment"
+                android:layout_width="match_parent"
+                android:layout_height="96dp"
+                android:layout_above="@+id/llMessagesSend"
+                android:layout_centerHorizontal="true"
+                android:background="@color/BackgroundFilter" >
+
+                <LinearLayout
+                    android:id="@+id/llMessagesAttachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="8dp" >
+                </LinearLayout>
+            </HorizontalScrollView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llMessagesAttach"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@android:color/black"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llMessagesAttachSettings"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@color/Background"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/ivMessagesPlace"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:src="@drawable/selector_geo" />
+
+                    <ImageView
+                        android:id="@+id/ivMessagesTranslate"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:padding="8dp"
+                        android:src="@drawable/selector_translate"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/ivDeliveryChatTimer"
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:padding="8dp"
+                        android:src="@drawable/selector_timer" />
+
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessagesAttachMain"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/BackgroundFilter"
+                android:visibility="visible" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainPhoto"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainPhoto"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_photo" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainPhoto"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachPhoto"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainVideo"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainVideo"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_video" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachVideo"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainAudio"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainAudio"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_audio" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainAudio"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachAudio"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainVoice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainVoice"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_voice" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainVoice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachVoice"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+                    
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainFile"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainFile"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_file" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainFile"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachFile"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainPlace"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainPlace"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_place" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainPlace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachPlace"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainContact"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainContact"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_contact" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainContact"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachContact"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachMainHide"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:clickable="true"
+                        android:padding="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachMainHide"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="1"
+                            android:src="@drawable/selector_attach_back" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachMainHide"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="@string/MessagesAttachHide"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textColor="@color/color_btn_black" />
+
+                    </LinearLayout>
+                    
+                </LinearLayout>
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessagesAttachVoice"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BackgroundFilter"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ivMessagesAttachVoiceBack"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_back" />
+
+                <RelativeLayout
+                    android:id="@+id/rlMessagesAttachVoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/llMessagesAttachVoiceRecord"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="8dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/drawable_white_round"
+                        android:orientation="vertical" 
+                        android:clickable="true" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical" >
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/ivMessagesAttachVoiceRecord"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="2"
+                            android:src="@drawable/ic_voice_init" />
+
+                        <TextView
+                            android:id="@+id/tvMessagesAttachVoiceRecord"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:text="00:00"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/TextSub" />
+                        
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivMessagesAttachVoiceOK"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMessageDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llMessageDialogResend"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivMessageDialogResend"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_send" />
+
+                <TextView
+                    android:id="@+id/tvMessageDialogResend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/MessagesResend"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessageDialogCopy"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivMessageDialogCopy"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_copy" />
+
+                <TextView
+                    android:id="@+id/tvMessageDialogCopy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/MessagesCopy"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMessageDialogDelete"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivMessageDialogDelete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_delete" />
+
+                <TextView
+                    android:id="@+id/tvMessageDialogDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/MessagesDelete"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+	<RelativeLayout
+	    android:id="@+id/rlMessagesSecretEmpty"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+	    android:background="@color/BackgroundDialog"
+	    android:clickable="true"
+	    android:orientation="vertical"
+	    android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tvMessagesSecretEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="@string/MessagesCodeEmpty"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack" />
+
+	        <LinearLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="40dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="16dp"
+	            android:background="@drawable/drawable_et" >
+	            
+	            <EditText
+	                android:id="@+id/etMessagesSecretEmpty"
+	                android:layout_width="120dp"
+	                android:layout_height="40dp"
+	                android:layout_gravity="center_horizontal"
+	                android:layout_marginLeft="40dp"
+	                android:background="@android:color/transparent"
+	                android:ems="10"
+	                android:gravity="center"
+	                android:inputType="numberPassword"
+	                android:maxLength="4" />
+	
+	            <ImageView
+	                android:id="@+id/ivMessagesSecretEmpty"
+	                android:layout_width="40dp"
+	                android:layout_height="40dp"
+	                android:layout_gravity="center_vertical"
+	                android:padding="8dp"
+	                android:src="@drawable/ic_eye_open" />
+	        
+	        </LinearLayout>
+
+	        <Button
+	            android:id="@+id/btnMessagesSecretEmpty"
+	            android:layout_width="wrap_content"
+	            android:layout_height="48dp"
+	            android:layout_gravity="center_horizontal"
+	            android:layout_marginBottom="16dp"
+	            android:background="@drawable/selector_btn_blue_shadow"
+	            android:paddingLeft="24dp"
+	            android:paddingRight="24dp"
+	            android:text="@string/OK"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="@color/color_btn_white" />
+	        
+        </LinearLayout>
+        
+    </RelativeLayout>
+</RelativeLayout>

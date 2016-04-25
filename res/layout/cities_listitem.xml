@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_li"
+    android:orientation="horizontal"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/tvCitiesListitemName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/Load"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/TextBlack" />
+
+    <TextView
+        android:id="@+id/tvCitiesListitemCode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="+7"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/TextSub" />
+
+    <ImageView
+        android:id="@+id/ivCitiesListitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_place" />
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llCountriesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivCountriesBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvCountriesTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/CountriesTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivCountriesSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_search" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCountriesSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/search_drawable"
+        android:visibility="gone" >
+	
+	    <ImageView
+	        android:id="@+id/ivCountriesSearchBack"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/selector_back" />
+	
+	    <EditText
+	        android:id="@+id/etCountriesSearch"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="20dp"
+	        android:layout_weight="1"
+	        android:background="@android:color/transparent"
+	        android:ems="10"
+	        android:hint="@string/CountriesSearch"
+	        android:inputType="text"
+	        android:maxLines="1"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/TextSub" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <ImageView
+	        android:id="@+id/ivCountriesClose"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/selector_cancel" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+		<LinearLayout
+		    android:id="@+id/llCountriesShadow"
+		    android:layout_width="match_parent"
+		    android:layout_height="4dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@drawable/drawable_shadow"
+		    android:orientation="vertical" />
+		
+			<ListView
+			    android:id="@+id/lvCountries"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@color/BackgroundListitem"
+			    android:divider="@drawable/drawable_devider"
+			    android:dividerHeight="0dp"
+			    android:scrollbars="none" />
+			
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/BackgroundFilter" >
+
+            <ImageView
+                android:id="@+id/ivProfileBack"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_back" />
+
+            <TextView
+                android:id="@+id/tvProfileTitle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="@string/ProfileTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/llProfileLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/drawable_white_ellipse"
+                android:clickable="true"
+                android:padding="4dp" >
+
+                <TextView
+                    android:id="@+id/tvProfileLikes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/color_btn_sub" />
+
+                <ImageView
+                    android:id="@+id/ivProfileLikes"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_like" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/ivProfileOk"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_ok"
+                android:visibility="visible" />
+            
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/llProfileShadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:background="@drawable/drawable_shadow"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <ScrollView
+                android:id="@+id/scrollView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp" >
+
+                        <ImageView
+                            android:id="@+id/ivProfileAfatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:scaleType="centerCrop"
+                            android:src="@color/BackgroundBlue" />
+
+                        <ImageView
+                            android:id="@+id/ivProfileChangePhoto"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginRight="10dp"
+                            android:padding="16dp"
+                            android:src="@drawable/ic_edit_white" />
+                    </RelativeLayout>
+					
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivProfilePhone"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_phone" />
+                    
+	                    <TextView
+	                        android:id="@+id/tvProfilePhone"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:layout_marginLeft="16dp"
+	                        android:background="@color/Background"
+	                        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+	                        android:gravity="center_vertical"
+	                        android:inputType="textCapWords|textPersonName"
+	                        android:maxLength="255"
+	                        android:text="123"
+	                        android:textAppearance="?android:attr/textAppearanceSmall"
+	                        android:textColor="@color/TextSub" />
+	                    
+                    </LinearLayout>
+                    
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="8dp" >
+
+                        <ImageView
+                            android:id="@+id/ivProfileEdit"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_contact" />
+
+                        <EditText
+                            android:id="@+id/etProfileLogin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="16dp"
+                            android:layout_weight="1"
+                            android:background="@color/Background"
+                            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890_"
+                            android:hint="@string/ProfileLogin"
+                            android:inputType="textCapWords|textPersonName"
+                            android:maxLength="255"
+                            android:textAppearance="?android:attr/textAppearanceSmall" >
+
+                            <requestFocus />
+                        </EditText>
+
+                        <ImageView
+                            android:id="@+id/ivProfileCheck"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_ok" />
+                    </LinearLayout>
+                    
+					<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/Separator"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+					<LinearLayout
+					    android:id="@+id/llProfileInfoClick"
+					    android:layout_width="match_parent"
+					    android:layout_height="56dp"
+					    android:orientation="horizontal" >
+
+					    <TextView
+					        android:id="@+id/tvProfileInfoClick"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:layout_gravity="center_vertical"
+					        android:layout_marginLeft="16dp"
+					        android:layout_weight="1"
+					        android:text="@string/ProfileInfo"
+					        android:textColor="@color/color_btn_sub" />
+
+					    <ImageView
+					        android:id="@+id/ivProfileInfoClick"
+					        android:layout_width="40dp"
+					        android:layout_height="match_parent"
+					        android:layout_marginRight="8dp"
+					        android:padding="8dp"
+					        android:src="@drawable/selector_down" />
+					</LinearLayout>
+                    
+                    <LinearLayout
+                        android:id="@+id/llProfileInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone" >
+
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+	
+	                        <EditText
+	                            android:id="@+id/etProfileName"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:layout_weight="1"
+	                            android:background="@color/Background"
+	                            android:hint="@string/ProfileName"
+	                            android:inputType="textCapWords|textPersonName"
+	                            android:maxLength="255"
+	                            android:paddingLeft="56dp"
+	                            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileName"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/ic_edit" />
+	                    </LinearLayout>
+	                    
+	                    <LinearLayout
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+	
+	                        <EditText
+	                            android:id="@+id/etProfileSurname"
+	                            android:layout_width="match_parent"
+	                            android:layout_height="match_parent"
+	                            android:layout_weight="1"
+	                            android:background="@color/Background"
+	                            android:hint="@string/ProfileSurname"
+	                            android:inputType="textCapWords|textPersonName"
+	                            android:maxLength="255"
+	                            android:paddingLeft="56dp"
+	                            android:textAppearance="?android:attr/textAppearanceSmall" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileSurname"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/ic_edit" />
+	                    </LinearLayout>
+	
+	                    <LinearLayout
+	                        android:id="@+id/llProfileSex"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:background="@drawable/selector_transparent"
+	                        android:clickable="true"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileSex"
+	                            android:layout_width="50dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_sex" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileSexText"
+	                            android:layout_width="0dp"
+	                            android:layout_height="match_parent"
+	                            android:layout_weight="1"
+	                            android:gravity="center_vertical"
+	                            android:paddingLeft="8dp"
+	                            android:text="@string/ProfileSex"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileSex"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:layout_marginRight="16dp"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/SexNot"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileSexNext"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_next" />
+	                    </LinearLayout>
+	
+	                    <LinearLayout
+	                        android:id="@+id/llProfileDate"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:background="@drawable/selector_transparent"
+	                        android:clickable="true"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileDate"
+	                            android:layout_width="50dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_date" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileDateText"
+	                            android:layout_width="0dp"
+	                            android:layout_height="match_parent"
+	                            android:layout_weight="1"
+	                            android:gravity="center_vertical"
+	                            android:paddingLeft="8dp"
+	                            android:text="@string/ProfileBirthday"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileDate"
+	                            android:layout_width="wrap_content"
+	                            android:layout_height="match_parent"
+	                            android:layout_marginRight="16dp"
+	                            android:gravity="center_vertical"
+	                            android:text="12.34.2143"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileDateNext"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_next" />
+	                    </LinearLayout>
+	                    
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/Separator"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+
+					<LinearLayout
+					    android:id="@+id/llProfilePlaceClick"
+					    android:layout_width="match_parent"
+					    android:layout_height="56dp"
+					    android:orientation="horizontal" >
+
+					    <TextView
+					        android:id="@+id/tvProfilePlaceClick"
+					        android:layout_width="0dp"
+					        android:layout_height="wrap_content"
+					        android:layout_gravity="center_vertical"
+					        android:layout_marginLeft="16dp"
+					        android:layout_weight="1"
+					        android:text="@string/ProfilePlace"
+					        android:textColor="@color/color_btn_sub" />
+
+					    <ImageView
+					        android:id="@+id/ivProfilePlaceClick"
+					        android:layout_width="40dp"
+					        android:layout_height="match_parent"
+					        android:layout_marginRight="8dp"
+					        android:padding="8dp"
+					        android:src="@drawable/selector_down" />
+					</LinearLayout>
+
+					<LinearLayout
+					    android:id="@+id/llProfilePlace"
+					    android:layout_width="match_parent"
+					    android:layout_height="wrap_content"
+					    android:orientation="vertical"
+					    android:visibility="gone" >
+
+	                    <LinearLayout
+	                        android:id="@+id/llProfileCountry"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:background="@drawable/selector_transparent"
+	                        android:clickable="true"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+	
+	                        <com.messme.view.CircleImageView
+	                            android:id="@+id/ivProfileCountry"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/ic_flag_0" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileCountry"
+	                            android:layout_width="0dp"
+	                            android:layout_height="match_parent"
+	                            android:layout_marginLeft="16dp"
+	                            android:layout_weight="1"
+	                            android:gravity="center_vertical"
+	                            android:text="Country"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileCountryNext"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_next" />
+	                    </LinearLayout>
+	
+	                    <LinearLayout
+	                        android:id="@+id/llProfileCity"
+	                        android:layout_width="match_parent"
+	                        android:layout_height="56dp"
+	                        android:background="@drawable/selector_transparent"
+	                        android:clickable="true"
+	                        android:orientation="horizontal"
+	                        android:paddingLeft="16dp"
+	                        android:paddingRight="8dp" >
+
+	                        <ImageView
+	                            android:id="@+id/ivProfileCity"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_city" />
+	
+	                        <TextView
+	                            android:id="@+id/tvProfileCity"
+	                            android:layout_width="0dp"
+	                            android:layout_height="match_parent"
+	                            android:layout_marginLeft="16dp"
+	                            android:layout_weight="1"
+	                            android:gravity="center_vertical"
+	                            android:text="@string/SelectCity"
+	                            android:textAppearance="?android:attr/textAppearanceSmall"
+	                            android:textColor="@color/color_btn_black" />
+	
+	                        <ImageView
+	                            android:id="@+id/ivProfileCityNext"
+	                            android:layout_width="40dp"
+	                            android:layout_height="match_parent"
+	                            android:padding="8dp"
+	                            android:src="@drawable/selector_next" />
+	                    </LinearLayout>
+                    
+					</LinearLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProfileDialogSex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogSexMale"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvProfileDialogSexMale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexMale"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogSexMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogSexFemale"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvProfileDialogSexFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexFemale"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogSexFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogSexNot"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvProfileDialogSexNot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexNot2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogSexNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProfileProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ProgressBar
+            android:id="@+id/pbProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProfileChanges"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+        
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical"
+	            android:padding="24dp" >
+	
+	            <TextView
+	                android:id="@+id/tvProfileChangesHeader"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="20dp"
+	                android:text="@string/ProfileChangeHeader"
+	                android:textAppearance="?android:attr/textAppearanceLarge"
+	                android:textColor="@color/TextBlack" />
+	
+	            <TextView
+	                android:id="@+id/tvProfileChangesText"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_marginBottom="10dp"
+	                android:text="@string/ProfileChangeText"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/TextSub" />
+	        </LinearLayout>
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="52dp" >
+	
+	            <LinearLayout
+	                android:layout_width="0dp"
+	                android:layout_height="match_parent"
+	                android:layout_weight="1"
+	                android:orientation="vertical" >
+	            </LinearLayout>
+	
+	            <Button
+	                android:id="@+id/btnProfileChangesNo"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Next"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	
+	            <Button
+	                android:id="@+id/btnProfileChangesYes"
+	                android:layout_width="wrap_content"
+	                android:layout_height="36dp"
+	                android:layout_gravity="center_vertical"
+	                android:layout_marginRight="8dp"
+	                android:background="@drawable/selector_btn_white"
+	                android:paddingLeft="20dp"
+	                android:paddingRight="20dp"
+	                android:text="@string/Change"
+	                android:textColor="@color/color_btn_blue"
+	                android:textStyle="bold" />
+	        </LinearLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlProfileDialogPhoto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogPhotoCamera"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogPhotoCamera"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_photo" />
+
+                <TextView
+                    android:id="@+id/tvProfileDialogPhotoCamera"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+                    android:text="@string/AvatarCamera"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogPhotoGallery"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" 
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogPhotoGallery"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_gallery" />
+
+	            <TextView
+	                android:id="@+id/tvProfileDialogPhotoGallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+	                android:text="@string/AvatarGallery"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llProfileDialogPhotoDelete"
+                android:layout_width="match_parent"
+                android:layout_height="56dp" 
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ivProfileDialogPhotoDelete"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:padding="16dp"
+                    android:src="@drawable/selector_cancel" />
+
+	            <TextView
+	                android:id="@+id/tvProfileDialogPhotoDelete"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="8dp"
+	                android:text="@string/AvatarDelete"
+	                android:textAppearance="?android:attr/textAppearanceMedium"
+	                android:textColor="@color/color_btn_black" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+	
+</RelativeLayout>

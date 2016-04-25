@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llCitiesTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivCitiesBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvCitiesTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/CitiesTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivCitiesSearch"
+            android:layout_width="48dp"
+            android:layout_height="56dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/selector_search" />
+
+        <ImageView
+            android:id="@+id/ivCitiesOk"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_ok"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llCitiesSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/search_drawable"
+        android:visibility="gone" >
+	
+	    <ImageView
+	        android:id="@+id/ivCitiesSearchBack"
+	        android:layout_width="20dp"
+	        android:layout_height="20dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="10dp"
+	        android:src="@drawable/selector_back" />
+	
+	    <EditText
+	        android:id="@+id/etCitiesSearch"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginLeft="20dp"
+	        android:layout_weight="1"
+	        android:background="@android:color/transparent"
+	        android:ems="10"
+	        android:hint="@string/CitiesSearch"
+	        android:inputType="text"
+	        android:maxLines="1"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/TextSub" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <ImageView
+	        android:id="@+id/ivCitiesClose"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+	        android:layout_gravity="center_vertical"
+	        android:layout_marginRight="10dp"
+	        android:src="@drawable/selector_cancel" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ProgressBar
+            android:id="@+id/pbCities"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+		<LinearLayout
+		    android:id="@+id/llCitiesShadow"
+		    android:layout_width="match_parent"
+		    android:layout_height="4dp"
+		    android:layout_alignParentLeft="true"
+		    android:layout_alignParentTop="true"
+		    android:background="@drawable/drawable_shadow"
+		    android:orientation="vertical" />
+		
+		<ListView
+		    android:id="@+id/lvCities"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@color/BackgroundListitem"
+		    android:divider="@drawable/drawable_devider"
+		    android:dividerHeight="0dp"
+		    android:scrollbars="none" />
+    </RelativeLayout>
+
+</LinearLayout>

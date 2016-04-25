@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/Background"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/BackgroundFilter" >
+
+            <ImageView
+                android:id="@+id/ivLoginBack"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:padding="16dp"
+                android:src="@drawable/selector_back" />
+
+            <TextView
+                android:id="@+id/tvLoginTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="16dp"
+                android:gravity="center_vertical"
+                android:text="@string/LoginTitle"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvLoginPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="@string/LoginPhone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <LinearLayout
+                    android:id="@+id/llLoginCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="72dp"
+                    android:background="@drawable/selector_btn_white"
+                    android:clickable="true"
+                    android:orientation="horizontal" >
+
+                    <com.messme.view.CircleImageView
+                        android:id="@+id/ivLoginFlag"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_margin="16dp"
+                        android:gravity="left|center_vertical" />
+
+                    <TextView
+                        android:id="@+id/tvLoginCountry"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="left|center_vertical"
+                        android:text="@string/Russia"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/TextBlack" />
+
+                    <TextView
+                        android:id="@+id/tvLoginCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center_vertical"
+                        android:text="+7"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/TextSub" />
+
+                    <ImageView
+                        android:id="@+id/ivLoginCountry"
+                        android:layout_width="30dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginLeft="21dp"
+                        android:layout_marginRight="21dp"
+                        android:gravity="right|center_vertical"
+                        android:src="@drawable/selector_next" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvLoginPhoneCode"
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="+"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/TextSub"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/etLoginPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="64dp"
+                        android:background="@drawable/drawable_et_line"
+                        android:hint="@string/LoginYourPhone"
+                        android:inputType="phone"
+                        android:textColor="@color/TextSub" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tvLoginSMS"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/LoginCode"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextSub" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="64dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/etLoginPromo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/drawable_et_line"
+                        android:hint="@string/LoginPromo"
+                        android:inputType="phone"
+                        android:textColor="@color/TextSub" />
+
+                    <ImageView
+                        android:id="@+id/ivLoginInfo"
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="18dp"
+                        android:paddingRight="18dp"
+                        android:src="@drawable/selector_info" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btnLoginNext"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:background="@drawable/selector_btn_blue_shadow"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:text="@string/Next"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlLoginDialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp" >
+
+                <TextView
+                    android:id="@+id/tvLoginDialogTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/LoginDialogTitle"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/TextBlack" />
+
+                <TextView
+                    android:id="@+id/tvLoginDialogAnswer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/LoginDialogAnswer"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextSub" />
+
+                <TextView
+                    android:id="@+id/tvLoginDialogPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="(+7)"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextSub" />
+
+                <TextView
+                    android:id="@+id/tvLoginDialogSMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/LoginDialogSMS"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextSub" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnLoginDialogChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_btn_white"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:text="@string/Change"
+                    android:textColor="@color/color_btn_blue"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnLoginDialogOK"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_btn_white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/OK"
+                    android:textColor="@color/color_btn_blue"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+			
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

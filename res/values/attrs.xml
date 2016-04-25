@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwipeLayout">
+        <attr name="drag_edge">
+            <flag name="left" value="1" />
+            <flag name="right" value="2" />
+            <flag name="top" value="4" />
+            <flag name="bottom" value="8" />
+        </attr>
+        <attr name="leftEdgeSwipeOffset" format="dimension" />
+        <attr name="rightEdgeSwipeOffset" format="dimension" />
+        <attr name="topEdgeSwipeOffset" format="dimension" />
+        <attr name="bottomEdgeSwipeOffset" format="dimension" />
+        <attr name="show_mode" format="enum">
+            <enum name="lay_down" value="0" />
+            <enum name="pull_out" value="1" />
+        </attr>
+        <attr name="clickToClose" format="boolean" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+    
+	<declare-styleable name="RoundedImageView">
+		<attr name="riv_corner_radius" format="dimension" />
+		<attr name="riv_corner_radius_top_left" format="dimension" />
+		<attr name="riv_corner_radius_top_right" format="dimension" />
+		<attr name="riv_corner_radius_bottom_left" format="dimension" />
+		<attr name="riv_corner_radius_bottom_right" format="dimension" />
+		<attr name="riv_border_width" format="dimension" />
+		<attr name="riv_border_color" format="color" />
+		<attr name="riv_mutate_background" format="boolean" />
+		<attr name="riv_oval" format="boolean" />
+		<attr name="android:scaleType" />
+		<attr name="riv_tile_mode">
+			<enum name="clamp" value="0" />
+			<enum name="repeat" value="1" />
+			<enum name="mirror" value="2" />
+		</attr>
+		<attr name="riv_tile_mode_x">
+			<enum name="clamp" value="0" />
+			<enum name="repeat" value="1" />
+			<enum name="mirror" value="2" />
+		</attr>
+		<attr name="riv_tile_mode_y">
+			<enum name="clamp" value="0" />
+			<enum name="repeat" value="1" />
+			<enum name="mirror" value="2" />
+		</attr>
+	</declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <!-- the minimum of the range -->
+        <attr name="absoluteMinValue" format="integer|float"/>
+        <!-- the maximum of the range -->
+        <attr name="absoluteMaxValue" format="integer|float"/>
+        <!-- show a single slider -->
+        <attr name="singleThumb" format="boolean"/>
+        <!-- show the labels on the right and left-->
+        <attr name="showLabels" format="boolean"/>
+        <!-- alwaysActive will make the buttons and bar always draw as the activeColor (the default is false) -->
+        <attr name="alwaysActive" format="boolean"/>
+        <!-- show the currently selected value above each thumb (defaults to true) -->
+        <attr name="valuesAboveThumbs" format="boolean"/>
+        <!-- padding on either side on the slider -->
+        <attr name="internalPadding" format="dimension"/>
+        <!-- the height of the bar -->
+        <attr name="barHeight" format="dimension"/>
+        <!-- the color of the bar that is not selected -->
+        <attr name="defaultColor" format="color"/>
+        <!-- the color of the bar that is selected -->
+        <attr name="activeColor" format="color"/>
+        <!-- the color of the text above thumbs -->
+        <attr name="textAboveThumbsColor" format="color"/>
+        <!-- set drawables for thumb handles -->
+        <attr name="thumbNormal" format="reference"/>
+        <attr name="thumbPressed" format="reference"/>
+        <attr name="thumbDisabled" format="reference"/>
+        <!-- thumb shadow specifications -->
+        <attr name="thumbShadow" format="boolean"/>
+        <attr name="thumbShadowColor" format="color"/>
+        <attr name="thumbShadowXOffset" format="dimension"/>
+        <attr name="thumbShadowYOffset" format="dimension"/>
+        <attr name="thumbShadowBlur" format="dimension"/>
+        <!-- to activate the thumbs and texts when the min and max values are the default ones (defaults to false) -->
+        <attr name="activateOnDefaultValues" format="boolean"/>
+    </declare-styleable>
+
+	<declare-styleable name="SwitchButton">
+		<attr name="kswThumbDrawable" format="reference"/>
+		<attr name="kswThumbColor" format="color|reference"/>
+		<attr name="kswThumbMargin" format="dimension|reference"/>
+		<attr name="kswThumbMarginTop" format="dimension|reference"/>
+		<attr name="kswThumbMarginBottom" format="dimension|reference"/>
+		<attr name="kswThumbMarginLeft" format="dimension|reference"/>
+		<attr name="kswThumbMarginRight" format="dimension|reference"/>
+		<attr name="kswThumbWidth" format="dimension|reference"/>
+		<attr name="kswThumbHeight" format="dimension|reference"/>
+		<attr name="kswThumbRadius" format="dimension|reference"/>
+		<attr name="kswBackRadius" format="dimension|reference"/>
+		<attr name="kswBackDrawable" format="reference"/>
+		<attr name="kswBackColor" format="color|reference"/>
+		<attr name="kswFadeBack" format="boolean"/>
+		<attr name="kswBackMeasureRatio" format="float"/>
+		<attr name="kswAnimationDuration" format="integer"/>
+		<attr name="kswTintColor" format="color|reference"/>
+	</declare-styleable>
+	
+    <declare-styleable name="ColorPicker">
+        <attr name="color_wheel_radius" format="dimension" />
+        <attr name="color_wheel_thickness" format="dimension" />
+        <attr name="color_center_radius" format="dimension" />
+        <attr name="color_center_halo_radius" format="dimension"/>
+        <attr name="color_pointer_radius" format="dimension" />
+        <attr name="color_pointer_halo_radius" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ColorBars">
+        <attr name="bar_thickness" format="dimension" />
+        <attr name="bar_length" format="dimension" />
+        <attr name="bar_pointer_radius" format="dimension" />
+        <attr name="bar_pointer_halo_radius" format="dimension" />
+        <attr name="bar_orientation_horizontal" format="boolean" />
+    </declare-styleable>
+</resources>

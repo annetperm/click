@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/selector_li"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <com.messme.view.CircleImageView
+        android:id="@+id/ivSelectListitemUserAvatar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:src="@color/Background" />
+
+    <TextView
+        android:id="@+id/tvSelectListitemUserName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/Load"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/color_btn_black"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/ivSelectListitemUserCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_check" />
+
+</LinearLayout>

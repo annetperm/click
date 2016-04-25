@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingInfoBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingInfoTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingInfoTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSettingInfoShadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/drawable_shadow"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingInfoQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingInfoQuestion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingInfoQuestion"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingInfoQuestion"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingInfoFAQ"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingInfoFAQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingInfoFAQ"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingInfoFAQ"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingInfoBonus"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingInfoBonus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingInfoBonus"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingInfoBonus"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingInfoUsing"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingInfoUsing"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingInfoUsing"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingInfoUsing"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

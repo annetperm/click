@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingApplicationBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingApplicationTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingApplicationTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/llSettingApplicationShadow"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:background="@drawable/drawable_shadow"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/svSettingApplication"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="16dp"
+                android:paddingTop="16dp" >
+
+                <TextView
+                    android:id="@+id/tvSettingApplicationMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingApplicationDownloadMobile"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationMobilePhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadPhoto"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationMobileAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadAudio"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationMobileVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadVideo"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationMobileFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadFile"
+                    android:textColor="@color/color_btn_black" />
+
+                <TextView
+                    android:id="@+id/tvSettingApplicationWifi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingApplicationDownloadWifi"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationWifiPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadPhoto"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationWifiAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadAudio"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationWifiVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadVideo"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationWifiFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadFile"
+                    android:textColor="@color/color_btn_black" />
+
+                <TextView
+                    android:id="@+id/tvSettingApplicationRoaming"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingApplicationDownloadRoaming"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationRoamingPhoto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadPhoto"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationRoamingAudio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadAudio"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationRoamingVideo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadVideo"
+                    android:textColor="@color/color_btn_black" />
+
+                <CheckBox
+                    android:id="@+id/cbSettingApplicationRoamingFile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:button="@drawable/selector_check"
+                    android:paddingLeft="8dp"
+                    android:text="@string/SettingApplicationDownloadFile"
+                    android:textColor="@color/color_btn_black" />
+
+                <TextView
+                    android:id="@+id/tvSettingApplicationTheme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingApplicationTheme"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <HorizontalScrollView
+                    android:id="@+id/horizontalScrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal" >
+
+                        <FrameLayout
+                            android:id="@+id/flSettingApplicationTheme1"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/drawable_theme" >
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:padding="1dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/drawable_background_chats" />
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme1Check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/ic_check_pressed" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/flSettingApplicationTheme2"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/drawable_theme"
+                            android:padding="1dp" >
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/drawable_background_chats2" />
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme2Check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/ic_check_pressed" />
+
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/flSettingApplicationTheme3"
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="4dp"
+                            android:background="@drawable/drawable_theme"
+                            android:padding="1dp" >
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="centerCrop"
+                                android:src="@color/Background" />
+
+                            <ImageView
+                                android:id="@+id/ivSettingApplicationTheme3Check"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:src="@drawable/ic_check_pressed" />
+
+                        </FrameLayout>
+
+                    </LinearLayout>
+                    
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/tvSettingApplicationLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="16dp"
+                    android:text="@string/SettingApplicationLanguage"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/TextBlack" />
+
+                <RadioGroup
+                    android:id="@+id/rgSettingApplicationLanguage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp" >
+
+                    <RadioButton
+                        android:id="@+id/rbSettingApplicationLanguageRu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="6dp"
+                        android:button="@drawable/selector_select"
+                        android:checked="true"
+                        android:paddingLeft="8dp"
+                        android:text="@string/SettingApplicationLanguageManual"
+                        android:textColor="@color/color_btn_black" />
+                </RadioGroup>
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>

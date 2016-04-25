@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BackgroundListitem"
+    android:orientation="vertical" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="216dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="16dp" >
+	
+	    <ImageView
+	        android:id="@+id/ivGroupTheme"
+	        android:layout_width="40dp"
+	        android:layout_height="match_parent"
+	        android:padding="8dp"
+	        android:src="@drawable/ic_contact" />
+	
+	    <EditText
+	        android:id="@+id/etGroupTheme"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	        android:layout_weight="1"
+	        android:background="@color/Background"
+	        android:hint="@string/GroupTheme"
+	        android:maxLength="255"
+	        android:minHeight="56dp"
+	        android:singleLine="true"
+	        android:textAppearance="?android:attr/textAppearanceMedium" >
+	
+	        <requestFocus />
+	    </EditText>
+	
+	    <ImageView
+	        android:id="@+id/ivGroupThemeEdit"
+	        android:layout_width="40dp"
+	        android:layout_height="match_parent"
+	        android:padding="8dp"
+	        android:src="@drawable/ic_edit" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:paddingLeft="56dp"
+	    android:paddingRight="16dp" >
+	
+	    <EditText
+	        android:id="@+id/etGroupDescription"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="16dp"
+	        android:layout_weight="1"
+	        android:background="@color/Background"
+	        android:hint="@string/GroupDescription"
+	        android:maxLength="1024"
+	        android:minHeight="56dp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	
+	    <ImageView
+	        android:id="@+id/ivGroupDescriptionEdit"
+	        android:layout_width="40dp"
+	        android:layout_height="match_parent"
+	        android:padding="8dp"
+	        android:src="@drawable/ic_edit" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:id="@+id/llGroupDate"
+	    android:layout_width="match_parent"
+	    android:layout_height="56dp"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="24dp" >
+	
+	    <ImageView
+	        android:id="@+id/ivGroupDate"
+	        android:layout_width="40dp"
+	        android:layout_height="match_parent"
+	        android:padding="8dp"
+	        android:src="@drawable/ic_date" />
+	
+	    <TextView
+	        android:id="@+id/tvGroupDate"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="16dp"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="@string/GroupDate"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/TextSub" />
+	
+	    <TextView
+	        android:id="@+id/tvGroupDateValue"
+	        android:layout_width="wrap_content"
+	        android:layout_height="match_parent"
+	        android:gravity="center_vertical"
+	        android:text="12.12.2012"
+	        android:textAppearance="?android:attr/textAppearanceSmall"
+	        android:textColor="@color/TextSub" />
+	</LinearLayout>
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="2dp"
+	    android:background="@color/Separator"
+	    android:orientation="vertical" >
+	</LinearLayout>
+	
+	<TextView
+	    android:id="@+id/tvGroupMembers"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:text="@string/GroupMembers"
+	    android:textAppearance="?android:attr/textAppearanceSmall"
+	    android:textColor="@color/TextBlue"
+	    android:textStyle="bold" />
+	
+	<LinearLayout
+	    android:id="@+id/llGroupAdd"
+	    android:layout_width="match_parent"
+	    android:layout_height="72dp"
+	    android:background="@drawable/selector_li"
+	    android:clickable="true"
+	    android:paddingLeft="16dp"
+	    android:paddingRight="8dp" >
+	
+	    <com.messme.view.CircleImageView
+	        android:id="@+id/ivGroupAdd"
+	        android:layout_width="40dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center_vertical"
+	        android:src="@drawable/ic_add_user" />
+	
+	    <TextView
+	        android:id="@+id/tvGroupAdd"
+	        android:layout_width="0dp"
+	        android:layout_height="match_parent"
+	        android:layout_marginLeft="16dp"
+	        android:layout_weight="1"
+	        android:gravity="center_vertical"
+	        android:text="@string/GroupAddMember"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/color_btn_sub" />
+	
+	    <ImageView
+	        android:id="@+id/ivGroupAddNext"
+	        android:layout_width="40dp"
+	        android:layout_height="match_parent"
+	        android:layout_gravity="center_vertical"
+	        android:padding="8dp"
+	        android:src="@drawable/selector_next" />
+	</LinearLayout>
+</LinearLayout>

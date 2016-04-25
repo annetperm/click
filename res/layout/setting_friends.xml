@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsBack"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_back" />
+
+        <TextView
+            android:id="@+id/tvSettingFriendsTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/SettingFriendsTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llSettingFriendsShadow"
+        android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:background="@drawable/drawable_shadow"
+        android:orientation="vertical" >
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsViber"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsViber"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsViber"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsViber"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsWhatsApp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsWhatsApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsWhatsApp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsWhatsApp"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsTelegram"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsTelegram"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsTelegram"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsTelegram"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsVK"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsVK"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsVK"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsVK"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsFacebook"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsFacebook"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/llSettingFriendsEmail"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/selector_li"
+        android:clickable="true"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp" >
+
+        <TextView
+            android:id="@+id/tvSettingFriendsEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:text="@string/SettingFriendsEmail"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/color_btn_black" />
+
+        <ImageView
+            android:id="@+id/ivSettingFriendsEmail"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"
+            android:src="@drawable/selector_next" />
+
+    </LinearLayout>
+
+</LinearLayout>

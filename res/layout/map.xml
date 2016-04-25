@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.messme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llMapTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/BackgroundFilter" >
+
+        <ImageView
+            android:id="@+id/ivMapMenu"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_menu" />
+
+        <TextView
+            android:id="@+id/tvMapTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/MapTitle"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/TextBlack"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/ivMapCancel"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_cancel"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivMapOk"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_ok"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivMapSearch"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="16dp"
+            android:src="@drawable/selector_search" />
+
+        <ImageView
+            android:id="@+id/ivMapFilter"
+            android:layout_width="40dp"
+            android:layout_height="56dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:src="@drawable/selector_filter" />
+    </LinearLayout>
+
+    <com.daimajia.swipe.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/slMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/llMapTitle"
+        android:background="@color/BackgroundBlue"
+        app:drag_edge="top" >
+
+        <LinearLayout
+            android:id="@+id/llMapFilter"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/llMapShowMe"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapShowMe"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/MapShowMeOnMap"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <com.kyleduo.switchbutton.SwitchButton
+                    android:id="@+id/sbMapShowMe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=""
+                    app:kswTintColor="@color/BackgroundBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapAge"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapAgeText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/MapAge"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <TextView
+                    android:id="@+id/tvMapAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="0-100"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_sub" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapSex"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapSexText"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/MapSex"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <TextView
+                    android:id="@+id/tvMapSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/SexAll"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_sub" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapCountry"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp" >
+
+                <com.messme.view.CircleImageView
+                    android:id="@+id/ivMapCountry"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:src="@color/BackgroundWhite" />
+
+                <TextView
+                    android:id="@+id/tvMapCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/MapAllCountry"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivMapCountryNext"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_next" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapCity"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/selector_background_filter"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="8dp" >
+
+                <ImageView
+                    android:id="@+id/ivMapCity"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_city" />
+
+                <TextView
+                    android:id="@+id/tvMapCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:layout_weight="1"
+                    android:text="@string/SelectCity"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivMapCityNext"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@drawable/selector_next" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <com.messme.map.MapWrapperLayout
+                android:id="@+id/map_relative_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <fragment
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true" />
+            </com.messme.map.MapWrapperLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapSearchBtn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/BackgroundFilter"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnMapSearch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_background_filter"
+                        android:text="@string/MapAllUser"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_btn_black" />
+
+                    <LinearLayout
+                        android:id="@+id/llMapSearch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/BackgroundBlue"
+                        android:orientation="vertical" >
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnMapSearch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_background_filter"
+                        android:text="@string/MapFriends"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/color_btn_black" />
+
+                    <LinearLayout
+                        android:id="@+id/llMapSearch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/BackgroundBlue"
+                        android:orientation="vertical"
+                        android:visibility="invisible" >
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapShadow"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/llMapSearchBtn"
+                android:background="@drawable/drawable_shadow"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapSearchMask"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@+id/llMapShadow"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="6dp"
+                android:background="@drawable/search_drawable"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ivMapSearch2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:src="@android:drawable/ic_search_category_default" />
+
+                <TextView
+                    android:id="@+id/tvMapSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:gravity="center_vertical"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/TextSub" />
+
+                <EditText
+                    android:id="@+id/etMapSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/TextSub"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/ivMapSpeaker"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:src="@android:drawable/ic_btn_speak_now"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </com.daimajia.swipe.SwipeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMapDialogAge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="16dp"
+                android:text="@string/MapDialodAge"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/TextBlack" />
+
+            <com.florescu.android.rangeseekbar.RangeSeekBar
+                android:id="@+id/sbMapDialogAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="52dp" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnMapDialogAge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/selector_btn_white"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="@string/OK"
+                    android:textColor="@color/color_btn_blue"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlMapDialogSex"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/BackgroundDialog"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/drawable_dialog"
+            android:orientation="vertical"
+            android:padding="8dp" >
+
+            <LinearLayout
+                android:id="@+id/llMapDialogSexMale"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapDialogSexMale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexMale"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivMapDialogSexMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapDialogSexFemale"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapDialogSexFemale"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexFemale"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivMapDialogSexFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llMapDialogSexNot"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:clickable="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/tvMapDialogSexNot"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/SexNot2"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/color_btn_black" />
+
+                <ImageView
+                    android:id="@+id/ivMapDialogSexNot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_select" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
